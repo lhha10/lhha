@@ -1,0 +1,421 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+<title>LHHA - Transactions</title>
+<script src="LHHA0.js"></script>
+<meta name="author" content="Simon Tremblay, sths.simont.info" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Decription" content="Jean-Francois Gagnon - STHS - Version : 3.1.5.5" />
+<link href="STHSMain.css" rel="stylesheet" type="text/css" />
+<link href="LHHA0.css" rel="stylesheet" type="text/css" />
+<link href="STHSMain-CSSOverwrite.css" rel="stylesheet" type="text/css" />
+<div class="tabsmenu standard"><ul class="tabmenu-links">
+<li><a class="tabmenuhome" href="./index.html">LHHA0 Home</a></li>
+<li id="STHSMenu-Main"><a href="#tabmenu1">Main</a></li>
+<li id="STHSMenu-ProLeague"><a href="#tabmenu2">Pro League</a></li>
+<li id="STHSMenu-ProTeam"><a href="#tabmenu3">Pro Team</a></li>
+<li id="STHSMenu-FarmLeague"><a href="#tabmenu4">Farm League</a></li>
+<li id="STHSMenu-FarmTeam"><a href="#tabmenu5">Farm Team</a></li>
+<li id="STHSMenu-League" class="activemenu"><a href="#tabmenu6">League</a></li>
+<li id="STHSMenu-Record"><a href="#tabmenu7">Records</a></li>
+<li id="STHSMenu-DirectLink"><a href="#tabmenu8">Team's Direct Link</a></li>
+</ul><div class="tab-contentmenu">
+<div class="tabmenu" id="tabmenu1">
+<table class="MenuSTHS"><tr>
+<td><a href="LHHA0.stc">STHS Client League File</a></td>
+<td><a href="http://sths.simont.info/DownloadLatestClient.php">Latest STHS Client</a></td>
+<td><a href="LHHA0-TodayGames.html">Today's Games</a></td>
+<td><a href="LHHA0-TodayTransactions.html">Today's Transactions</a></td>
+<td><a href="LHHA0-Schedule.html">Schedule </a></td>
+<td class="STHSW1"></td></tr></table></div>
+<div class="tabmenu" id="tabmenu2">
+<table class="MenuSTHS"><tr>
+<td><a href="LHHA0-ProStanding.html">Standing</a></td>
+<td><a href="LHHA0-ProLeaders.html">Leader</a></td>
+<td><a href="LHHA0-ProIndividualLeaders.html">Individual Leaders</a></td>
+<td><a href="LHHA0-ProPowerRanking.html">Power Ranking</a></td>
+<td class="STHSW1"></td></tr></table></div>
+<div class="tabmenu" id="tabmenu3">
+<table class="MenuSTHS"><tr>
+<td><a href="LHHA0-ProTeamRoster.html">Roster</a></td>
+<td><a href="LHHA0-ProTeamScoring.html">Scoring</a></td>
+<td><a href="LHHA0-ProTeamPlayersInfo.html">PlayersInfo</a></td>
+<td><a href="LHHA0-ProTeamLines.html">Lines</a></td>
+<td><a href="LHHA0-ProTeamSchedule.html">Schedule</a></td>
+<td><a href="LHHA0-ProTeamStats.html">Stats</a></td>
+<td><a href="LHHA0-ProTeamStatsVS.html">StatsVS</a></td>
+<td><a href="LHHA0-TeamFinance.html">Finance</a></td>
+<td><a href="LHHA0-TeamProspects.html">Future</a></td>
+<td><a href="LHHA0-TeamHistory.html">History</a></td>
+<td><a href="LHHA0-TeamInjurySuspension.html">Injury/Suspension</a></td>
+<td class="STHSW1"></td></tr></table></div>
+<div class="tabmenu" id="tabmenu4">
+<table class="MenuSTHS"><tr>
+<td><a href="LHHA0-FarmStanding.html">Standing</a></td>
+<td><a href="LHHA0-FarmLeaders.html">Leader</a></td>
+<td><a href="LHHA0-FarmIndividualLeaders.html">Individual Leaders</a></td>
+<td><a href="LHHA0-FarmPowerRanking.html">Power Ranking</a></td>
+<td class="STHSW1"></td></tr></table></div>
+<div class="tabmenu" id="tabmenu5">
+<table class="MenuSTHS"><tr>
+<td><a href="LHHA0-FarmTeamRoster.html">Roster</a></td>
+<td><a href="LHHA0-FarmTeamScoring.html">Scoring</a></td>
+<td><a href="LHHA0-FarmTeamPlayersInfo.html">PlayersInfo</a></td>
+<td><a href="LHHA0-FarmTeamLines.html">Lines</a></td>
+<td><a href="LHHA0-FarmTeamSchedule.html">Schedule</a></td>
+<td><a href="LHHA0-FarmTeamStats.html">Stats</a></td>
+<td><a href="LHHA0-FarmTeamStatsVS.html">StatsVS</a></td>
+<td class="STHSW1"></td></tr></table></div>
+<div class="tabmenu active" id="tabmenu6">
+<table class="MenuSTHS"><tr>
+<td><a href="LHHA0-Coaches.html">Coaches</a></td>
+<td><a href="LHHA0-Transactions.html">Transactions</a></td>
+<td><a href="LHHA0-Waivers.html">Waivers</a></td>
+<td><a href="LHHA0-Unassigned.html">Unassigned</a></td>
+<td><a href="LHHA0-FreeAgents.html">FreeAgents</a></td>
+<td><a href="LHHA0-TeamsAndGMInfo.html">Team/GM</a></td>
+<td><a href="LHHA0-RerateDifference.html">RerateDifference</a></td>
+<td class="STHSW1"></td></tr></table></div>
+<div class="tabmenu" id="tabmenu7">
+<table class="MenuSTHS"><tr>
+<td><a href="LHHA0-LeagueRecords.html">League Records</a></td>
+<td><a href="LHHA0-TeamRecords.html">Team Records</a></td>
+<td class="STHSW1"></td></tr></table></div>
+<div class="tabmenu" id="tabmenu8">
+<table class="MenuSTHS"><tr>
+<td><a href="LHHA0-ProTeamRoster.html#Ducks">Ana</a></td>
+<td><a href="LHHA0-ProTeamRoster.html#Bruins">Bos</a></td>
+<td><a href="LHHA0-ProTeamRoster.html#Sabres">Buf</a></td>
+<td><a href="LHHA0-ProTeamRoster.html#Flames">Cal</a></td>
+<td><a href="LHHA0-ProTeamRoster.html#Blackhawks">Chi</a></td>
+<td><a href="LHHA0-ProTeamRoster.html#Avalanche">Col</a></td>
+<td><a href="LHHA0-ProTeamRoster.html#RedWings">Det</a></td>
+<td><a href="LHHA0-ProTeamRoster.html#Oilers">Edm</a></td>
+<td><a href="LHHA0-ProTeamRoster.html#Whalers">Har</a></td>
+<td><a href="LHHA0-ProTeamRoster.html#Kings">LAK</a></td>
+<td><a href="LHHA0-ProTeamRoster.html#Wild">Min</a></td>
+<td><a href="LHHA0-ProTeamRoster.html#Canadiens">Mon</a></td>
+<td><a href="LHHA0-ProTeamRoster.html#Devils">NJD</a></td>
+<td><a href="LHHA0-ProTeamRoster.html#Islanders">NYI</a></td>
+<td><a href="LHHA0-ProTeamRoster.html#Rangers">NYR</a></td>
+<td><a href="LHHA0-ProTeamRoster.html#Flyers">Phi</a></td>
+<td><a href="LHHA0-ProTeamRoster.html#Penguins">Pit</a></td>
+<td><a href="LHHA0-ProTeamRoster.html#Nordiques">Que</a></td>
+</tr><tr>
+<td><a href="LHHA0-ProTeamRoster.html#Blues">StL</a></td>
+<td><a href="LHHA0-ProTeamRoster.html#Lightning">Tam</a></td>
+<td><a href="LHHA0-ProTeamRoster.html#MapleLeafs">Tor</a></td>
+<td><a href="LHHA0-ProTeamRoster.html#Canucks">Van</a></td>
+<td><a href="LHHA0-ProTeamRoster.html#Capitals">Was</a></td>
+<td><a href="LHHA0-ProTeamRoster.html#Jets">Win</a></td>
+<td colspan="12" class="STHSW1"></td></tr></table>
+</div></div></div><br />
+<table class="STHSTableFullW"><tr><td class="STHSHeaderTitle">Transactions</td><td class="STHSHeaderDate">Last Update - 19 novembre 2018 at 19:57</td></tr>
+</table><div class="STHSWarning">Your browser screen resolution is too small for this page. Some information are hidden to keep the page readable.<br /></div>
+[2018-11-19 18:47:47] - Avalanche are expected to be over the salary cap by 7 815 432 $!<br />
+[2018-11-19 18:47:37] - Avalanche are expected to be over the salary cap by 7 815 432 $!<br />
+<span style="color:Red">[2018-11-19 18:46:47] - Jonathan Ericsson from Oilers is back from Groin Injury.</span><br />
+<span style="color:Black">[2018-11-19 18:46:47] - Matthew O'Connor of Avalanche was sent to pro.</span><br />
+<span style="color:Black">[2018-11-19 18:46:47] - Callum Booth of Avalanche was sent to pro.</span><br />
+<span style="color:Black">[2018-11-19 18:46:47] - Yannick Weber of Avalanche was sent to pro.</span><br />
+<span style="color:Black">[2018-11-19 18:46:47] - Colin McDonald of Avalanche was sent to pro.</span><br />
+<span style="color:Black">[2018-11-19 18:46:47] - Radim Vrbata of Avalanche was sent to pro.</span><br />
+<span style="color:Black">[2018-11-19 18:46:47] - Cody McLeod of Avalanche was sent to pro.</span><br />
+<span style="color:Black">[2018-11-19 18:46:47] - Joel Ward of Avalanche was sent to pro.</span><br />
+<span style="color:Black">[2018-11-19 18:46:47] - Mike Blunden of Avalanche was sent to pro.</span><br />
+<span style="color:Black">[2018-11-19 18:46:47] - Chris Thorburn of Avalanche was sent to pro.</span><br />
+[2018-11-19 18:46:47] - Avalanche lines for next game are empty. Current rosters/lines are not erased. But, Lake Erie lines for next game are NOT empty. Current farm rosters/lines are moved and might impact pro rosters/lines.<br />
+[2018-11-19 18:46:47] - Manchester lines for next game are empty. Current rosters/lines are not erased.<br />
+[2018-11-19 18:46:47] - Kevan Miller of Ducks was sent to farm.<br />
+[2018-11-19 18:46:47] - Kyle Connor of Ducks was sent to farm.<br />
+[2018-11-19 18:46:47] - Alex Tuch of Ducks was sent to farm.<br />
+[2018-11-19 18:46:47] - Syracuse lines for next game are empty. Current rosters/lines are not erased. But, Ducks lines for next game are NOT empty. Current pro rosters/lines are moved and might impact farm rosters/lines.<br />
+[2018-11-19 18:46:47] - Canucks lines for next game are empty. Current rosters/lines are not erased.<br />
+[2018-11-19 18:46:47] - Both RedWings and Grand Rapids lines for next game are empty. Current rosters/lines are not erased.<br />
+[2018-11-19 18:46:47] - Rockford lines for next game are empty. Current rosters/lines are not erased.<br />
+[2018-11-19 18:46:47] - Peoria lines for next game are empty. Current rosters/lines are not erased.<br />
+[2018-11-19 18:46:47] - Adirondack lines for next game are empty. Current rosters/lines are not erased.<br />
+[2018-11-19 18:46:47] - Albany lines for next game are empty. Current rosters/lines are not erased.<br />
+[2018-11-19 18:46:47] - Norfolk lines for next game are empty. Current rosters/lines are not erased.<br />
+[2018-11-19 18:46:47] - Bridgeport lines for next game are empty. Current rosters/lines are not erased.<br />
+[2018-11-19 18:46:47] - Both Nordiques and Cornwall lines for next game are empty. Current rosters/lines are not erased.<br />
+[2018-11-19 18:46:47] - Rochester lines for next game are empty. Current rosters/lines are not erased.<br />
+[2018-11-19 18:46:47] - Providence lines for next game are empty. Current rosters/lines are not erased.<br />
+[2018-11-19 18:46:46] - Matt Moulson from Rochester has scored a Hat Trick!<br />
+<span style="color:Red">[2018-11-19 18:46:46] - Game 20 - Unknown Player from Peoria is injured  (Left Hip) and is out for 1 week.</span><br />
+[2018-11-19 18:46:46] - Jason Dickinson from Norfolk has scored a Hat Trick!<br />
+<span style="color:Red">[2018-11-19 18:46:46] - Game 18 - Unknown Player from Albany is injured  (Sore Left Knee) and is out for 1 week.</span><br />
+[2018-11-19 18:46:46] - Drake Caggiula from Syracuse has scored a Hat Trick!<br />
+[2018-11-19 18:46:46] - Riley Sheahan from Syracuse has scored a Hat Trick!<br />
+[2018-11-19 18:46:45] - Pontus Aberg from Adirondack has scored a Hat Trick!<br />
+[2018-11-19 18:46:45] - John Quenneville from Adirondack has scored a Hat Trick!<br />
+[2018-11-19 18:46:45] - A.J. Greer from Adirondack has scored a Hat Trick!<br />
+[2018-11-19 18:46:45] - Scott Mayfield from Nordiques completes suspension<br />
+[2018-11-19 18:46:45] - Brett Connolly from Canadiens has scored a Hat Trick!<br />
+<span style="color:Red">[2018-11-19 18:46:43] - Game 12 - Jonathan Ericsson from Oilers is injured  (Groin) and is out for 4 days.</span><br />
+[2018-11-19 18:44:21] - Peter Budaj of Flyers was sent to farm.<br />
+<span style="color:Black">[2018-11-19 18:44:09] - Peter Budaj of Flyers was sent to pro.</span><br />
+[2018-11-19 18:43:46] - Flyers are expected to be under the minimum salary cap by 1 312 564 $!<br />
+[2018-11-19 18:43:28] - Auto Roster Partial Function has been run for Flyers.<br />
+[2018-11-19 18:43:28] - Auto Roster Farm Only Function has been run for Flyers.<br />
+<span style="color:Black">[2018-11-19 18:43:18] - Brendan Leipsic of Blackhawks was sent to pro.</span><br />
+[2018-11-19 18:43:12] - Auto Roster Function has been run for Blackhawks.<br />
+[2018-11-19 18:43:12] - Scott Harrington of Blackhawks was sent to farm.<br />
+<span style="color:Black">[2018-11-19 18:43:12] - Tim Heed of Blackhawks was sent to pro.</span><br />
+[2018-11-19 18:43:08] - Blackhawks are expected to be under the minimum salary cap by 480 897 $!<br />
+[2018-11-19 18:42:52] - Auto Roster Partial Function has been run for Blackhawks.<br />
+[2018-11-19 18:42:52] - Auto Roster Farm Only Function has been run for Blackhawks.<br />
+[2018-11-19 18:42:52] - Auto Roster Partial Function has been run for Flyers.<br />
+[2018-11-19 18:42:52] - Auto Roster Farm Only Function has been run for Flyers.<br />
+[2018-11-19 18:42:34] - Chris Chelios average salary was modified from 2 500 000 $ to 10 000 000 $.<br />
+[2018-11-19 18:42:01] - Doug Harvey average salary was modified from 10 000 000 $ to 2 500 000 $.<br />
+[2018-11-19 18:41:06] - Auto Roster Function has been run for Blackhawks.<br />
+[2018-11-19 18:41:06] - Ryan Donato of Blackhawks was sent to farm.<br />
+[2018-11-19 18:41:06] - Tim Heed of Blackhawks was sent to farm.<br />
+[2018-11-19 18:41:06] - Andrej Sekera of Blackhawks was sent to farm.<br />
+<span style="color:Black">[2018-11-19 18:41:06] - Scott Harrington of Blackhawks was sent to pro.</span><br />
+[2018-11-19 18:40:56] - Blackhawks are expected to be under the minimum salary cap by 1 147 617 $!<br />
+[2018-11-19 18:40:26] - Auto Roster Partial Function has been run for Blackhawks.<br />
+[2018-11-19 18:40:26] - Auto Roster Farm Only Function has been run for Blackhawks.<br />
+[2018-11-19 18:40:17] - Auto Lines Function has been run for Whalers.<br />
+[2018-11-19 18:40:10] - Auto Roster Function has been run for Whalers.<br />
+[2018-11-19 18:40:10] - Erik Gustafsson of Whalers was sent to farm.<br />
+<span style="color:Black">[2018-11-19 18:40:10] - Oliver Bjorkstrand of Whalers was sent to pro.</span><br />
+<span style="color:Black">[2018-11-19 18:40:10] - Braydon Coburn of Whalers was sent to pro.</span><br />
+<span style="color:Black">[2018-11-19 18:40:10] - Kevin Shattenkirk of Whalers was sent to pro.</span><br />
+[2018-11-19 18:40:06] - Charlotte roster errors : Not enough Players available in Pro Team! 19 Dressed. 20 Required.
+Some errors will be automatically fixed.
+<br />
+[2018-11-19 18:40:06] - Whalers roster errors : Not enough Centers available in Pro Team! 1 Dressed. 3 Required.
+Not enough Left Wings available in Pro Team! 0 Dressed. 3 Required.
+Not enough Right Wings available in Pro Team! 0 Dressed. 3 Required.
+Not enough Forward available in Pro Team! 1 Dressed. 12 Required.
+Not enough Defenseman available in Pro Team! 1 Dressed. 6 Required.
+Not enough Goalie available in Pro Team! 1 Dressed. 2 Required.
+Not enough Players available in Pro Team! 2 Dressed. 18 Required.
+Some errors will be automatically fixed.
+<br />
+[2018-11-19 18:40:05] - Whalers are expected to be under the minimum salary cap by 256 901 $!<br />
+[2018-11-19 18:39:47] - Auto Roster Partial Function has been run for Blackhawks.<br />
+[2018-11-19 18:39:47] - Auto Roster Farm Only Function has been run for Blackhawks.<br />
+[2018-11-19 18:39:47] - Auto Lines Farm Function has been run for Rochester.<br />
+[2018-11-19 18:39:47] - Auto Roster Partial Function has been run for Sabres.<br />
+<span style="color:Black">[2018-11-19 18:39:47] - Stefan Noesen of Sabres was sent to pro.</span><br />
+<span style="color:Black">[2018-11-19 18:39:47] - Vladimir Sobotka of Sabres was sent to pro.</span><br />
+<span style="color:Black">[2018-11-19 18:39:47] - Bobby Ryan of Sabres was sent to pro.</span><br />
+[2018-11-19 18:39:47] - Auto Roster Farm Only Function has been run for Sabres.<br />
+[2018-11-19 18:38:19] - Successfully loaded Wild lines done with STHS Client - 3.1.2.2<br />
+<span style="color:Black">[2018-11-19 18:38:19] - Cam Talbot of Wild was sent to pro.</span><br />
+<span style="color:Black">[2018-11-19 18:38:19] - Jujhar Khaira of Wild was sent to pro.</span><br />
+<span style="color:Black">[2018-11-19 18:38:19] - Timo Meier of Wild was sent to pro.</span><br />
+<span style="color:Black">[2018-11-19 18:38:19] - Brooks Laich of Wild was sent to pro.</span><br />
+<span style="color:Teal">[2018-11-19 18:38:18] - Wild placed Brooks Laich on waivers.</span><br />
+[2018-11-19 18:38:10] - Successfully loaded Nordiques lines done with STHS Client - 3.1.2.2<br />
+<span style="color:Black">[2018-11-19 18:38:10] - Derrick Pouliot of Nordiques was sent to pro.</span><br />
+[2018-11-19 18:37:59] - Successfully loaded Flyers lines done with STHS Client - 3.1.3.0<br />
+<span style="color:Black">[2018-11-19 18:37:59] - Matt Beleskey of Flyers was sent to pro.</span><br />
+<span style="color:Black">[2018-11-19 18:37:59] - Zack Kassian of Flyers was sent to pro.</span><br />
+[2018-11-19 18:37:46] - Successfully loaded Avalanche lines done with STHS Client - 3.1.2.2<br />
+[2018-11-19 18:37:45] - Joel Ward of Avalanche was sent down to farm.<br />
+<span style="color:Black">[2018-11-19 18:37:45] - Tyson Jost of Avalanche was sent to pro.</span><br />
+[2018-11-19 18:36:13] - Blackhawks are expected to be under the minimum salary cap by 1 147 617 $!<br />
+<span style="color:#0080FF">[2018-11-19 18:36:10] - TRADE : From MapleLeafs to Blackhawks : Andreas Athanasiou (69), Ethan Bear (63), 6 500 000 $ (Money), Y:11-RND:3-LAK.</span><br />
+<span style="color:#0080FF">[2018-11-19 18:36:10] - TRADE : From Blackhawks to MapleLeafs : Matt Duchene (73).</span><br />
+[2018-11-17 21:30:26] - Whalers are expected to be under the minimum salary cap by 256 901 $!<br />
+[2018-11-17 21:30:25] - Sabres are expected to be under the minimum salary cap by 55 504 $!<br />
+<span style="color:Teal">[2018-11-17 21:29:50] - Brooks Laich was cleared from waivers and was sent to down farm.</span><br />
+<span style="color:Teal">[2018-11-17 21:29:50] - Cameron Gaunce was cleared from waivers and was sent to down farm.</span><br />
+[2018-11-17 21:29:50] - Abbotsford lines for next game are empty. Current rosters/lines are not erased.<br />
+[2018-11-17 21:29:50] - Manchester lines for next game are empty. Current rosters/lines are not erased. But, Kings lines for next game are NOT empty. Current pro rosters/lines are moved and might impact farm rosters/lines.<br />
+[2018-11-17 21:29:50] - Chicago lines for next game are empty. Current rosters/lines are not erased.<br />
+[2018-11-17 21:29:50] - Hershey lines for next game are empty. Current rosters/lines are not erased.<br />
+[2018-11-17 21:29:50] - Grand Rapids lines for next game are empty. Current rosters/lines are not erased.<br />
+[2018-11-17 21:29:50] - St.Johns lines for next game are empty. Current rosters/lines are not erased.<br />
+[2018-11-17 21:29:50] - Cam Talbot of Wild was sent to farm.<br />
+[2018-11-17 21:29:50] - Jujhar Khaira of Wild was sent to farm.<br />
+[2018-11-17 21:29:50] - Timo Meier of Wild was sent to farm.<br />
+[2018-11-17 21:29:50] - Houston lines for next game are empty. Current rosters/lines are not erased. But, Wild lines for next game are NOT empty. Current pro rosters/lines are moved and might impact farm rosters/lines.<br />
+[2018-11-17 21:29:50] - Both Devils and Albany lines for next game are empty. Current rosters/lines are not erased.<br />
+[2018-11-17 21:29:50] - Wilkes-Barre lines for next game are empty. Current rosters/lines are not erased.<br />
+[2018-11-17 21:29:50] - Connecticut lines for next game are empty. Current rosters/lines are not erased.<br />
+[2018-11-17 21:29:50] - Islanders lines for next game are empty. Current rosters/lines are not erased.<br />
+[2018-11-17 21:29:50] - Brandon Montour of Whalers was sent to farm.<br />
+[2018-11-17 21:29:50] - Charlotte lines for next game are empty. Current rosters/lines are not erased. But, Whalers lines for next game are NOT empty. Current pro rosters/lines are moved and might impact farm rosters/lines.<br />
+[2018-11-17 21:29:50] - Hamilton lines for next game are empty. Current rosters/lines are not erased.<br />
+[2018-11-17 21:29:50] - Vladimir Sobotka of Sabres was sent to farm.<br />
+[2018-11-17 21:29:50] - Stefan Noesen of Sabres was sent to farm.<br />
+[2018-11-17 21:29:50] - Ty Rattie of Sabres was sent to farm.<br />
+[2018-11-17 21:29:50] - Bobby Ryan of Sabres was sent to farm.<br />
+[2018-11-17 21:29:50] - Rochester lines for next game are empty. Current rosters/lines are not erased. But, Sabres lines for next game are NOT empty. Current pro rosters/lines are moved and might impact farm rosters/lines.<br />
+[2018-11-17 21:29:49] - Michael McCarron from Grand Rapids has scored a Hat Trick!<br />
+[2018-11-17 21:29:48] - Christian Fischer from Hamilton has scored a Hat Trick!<br />
+<span style="color:Red">[2018-11-17 21:29:48] - Game 9 - Auston Matthews from Whalers is injured  (Lacerated Right Calf) and is out for 2 months.</span><br />
+[2018-11-17 21:29:48] - Tyler Motte from Wilkes-Barre has scored a Hat Trick!<br />
+[2018-11-17 21:29:26] - Successfully loaded Wild lines done with STHS Client - 3.1.2.2<br />
+<span style="color:Black">[2018-11-17 21:29:26] - Michael Frolik of Wild was sent to pro.</span><br />
+<span style="color:Black">[2018-11-17 21:29:26] - Scott Hartnell of Wild was sent to pro.</span><br />
+[2018-11-17 21:29:09] - Successfully loaded Whalers lines done with STHS Client - 3.1.5.5<br />
+[2018-11-17 21:29:02] - Successfully loaded MapleLeafs lines done with STHS Client - 3.1.2.2<br />
+[2018-11-17 21:28:54] - Successfully loaded Canadiens lines done with STHS Client - 3.1.3.0<br />
+<span style="color:Black">[2018-11-17 21:28:54] - Tom Kuhnhackl of Canadiens was sent to pro.</span><br />
+<span style="color:Black">[2018-11-17 21:28:54] - Travis Hamonic of Canadiens was sent to pro.</span><br />
+[2018-11-17 21:28:54] - Christian Fischer of Canadiens was sent down to farm.<br />
+<span style="color:Black">[2018-11-17 21:28:54] - Colin Wilson of Canadiens was sent to pro.</span><br />
+[2018-11-17 21:28:42] - Successfully loaded Blackhawks lines done with STHS Client - 3.1.6.6<br />
+[2018-11-17 17:02:20] - Auto Roster Function has been run for Avalanche.<br />
+[2018-11-17 17:02:20] - Matthew O'Connor of Avalanche was sent to farm.<br />
+[2018-11-17 17:02:20] - Callum Booth of Avalanche was sent to farm.<br />
+[2018-11-17 17:02:20] - Radim Vrbata of Avalanche was sent to farm.<br />
+[2018-11-17 17:02:20] - Tyson Jost of Avalanche was sent to farm.<br />
+[2018-11-17 17:02:20] - Chris Thorburn of Avalanche was sent to farm.<br />
+[2018-11-17 17:02:20] - Yannick Weber of Avalanche was sent to farm.<br />
+[2018-11-17 17:02:20] - Cody McLeod of Avalanche was sent to farm.<br />
+[2018-11-17 17:02:20] - Mike Blunden of Avalanche was sent to farm.<br />
+[2018-11-17 17:02:20] - Colin McDonald of Avalanche was sent to farm.<br />
+[2018-11-17 17:02:17] - Avalanche are expected to be over the salary cap by 7 871 800 $!<br />
+[2018-11-17 17:02:10] - Auto Lines Farm Function has been run for St.Johns.<br />
+[2018-11-17 17:02:09] - Auto Roster Farm Only Function has been run for Jets.<br />
+[2018-11-17 17:01:06] - Avalanche are expected to be over the salary cap by 7 871 800 $!<br />
+[2018-11-17 16:59:51] - Auto Lines Function has been run for Wild.<br />
+[2018-11-17 16:57:55] - Auto Lines Function has been run for Wild.<br />
+[2018-11-17 16:57:46] - Auto Roster Function has been run for Wild.<br />
+<span style="color:Black">[2018-11-17 16:57:46] - Cam Talbot of Wild was sent to pro.</span><br />
+[2018-11-17 16:57:46] - Michael Frolik of Wild was sent to farm.<br />
+[2018-11-17 16:57:46] - Scott Hartnell of Wild was sent to farm.<br />
+<span style="color:Black">[2018-11-17 16:57:46] - Jujhar Khaira of Wild was sent to pro.</span><br />
+<span style="color:Black">[2018-11-17 16:57:46] - Timo Meier of Wild was sent to pro.</span><br />
+[2018-11-17 16:57:38] - Wild roster errors : Not enough Forward available in Pro Team! 9 Dressed. 12 Required.
+Not enough Defenseman available in Pro Team! 3 Dressed. 6 Required.
+Not enough Goalie available in Pro Team! 0 Dressed. 2 Required.
+Not enough Players available in Pro Team! 12 Dressed. 18 Required.
+Some errors will be automatically fixed.
+<br />
+[2018-11-17 16:57:19] - Auto Lines Function has been run for Islanders.<br />
+[2018-11-17 16:55:05] - Successfully loaded RedWings lines done with STHS Client - 3.1.2.2<br />
+<span style="color:Black">[2018-11-17 16:55:05] - Malcolm Subban of RedWings was sent to pro.</span><br />
+<span style="color:Black">[2018-11-17 16:55:05] - Tim Schaller of RedWings was sent to pro.</span><br />
+<span style="color:Black">[2018-11-17 16:55:05] - Adam Pelech of RedWings was sent to pro.</span><br />
+<span style="color:Black">[2018-11-17 16:55:05] - Brian Gibbons of RedWings was sent to pro.</span><br />
+[2018-11-17 16:55:01] - RedWings are expected to be under the minimum salary cap by 667 586 $!<br />
+[2018-11-17 16:54:50] - Successfully loaded MapleLeafs lines done with STHS Client - 3.1.2.2<br />
+[2018-11-17 16:54:36] - Successfully loaded Canucks lines done with STHS Client - 3.1.6.6<br />
+[2018-11-17 16:54:13] - Successfully loaded Blackhawks lines done with STHS Client - 3.1.6.6<br />
+[2018-11-17 16:54:13] - Scott Harrington of Blackhawks was sent down to farm.<br />
+<span style="color:Black">[2018-11-17 16:54:13] - Ryan Donato of Blackhawks was sent to pro.</span><br />
+<span style="color:Black">[2018-11-17 16:54:13] - Tim Heed of Blackhawks was sent to pro.</span><br />
+<span style="color:Black">[2018-11-17 16:54:13] - Andrej Sekera of Blackhawks was sent to pro.</span><br />
+[2018-11-17 16:54:09] - Blackhawks are expected to be under the minimum salary cap by 2 895 987 $!<br />
+<span style="color:#0080FF">[2018-11-17 16:44:40] - Ulf Samuelsson has been deleted from Whalers.</span><br />
+<span style="color:#0080FF">[2018-11-17 16:44:33] - Sheldon Brookbank has been deleted from Whalers.</span><br />
+<span style="color:#0080FF">[2018-11-17 16:44:28] - Ryan Shannon has been deleted from Whalers.</span><br />
+<span style="color:#0080FF">[2018-11-17 16:44:22] - Peter Harrold has been deleted from Whalers.</span><br />
+<span style="color:#0080FF">[2018-11-17 16:44:17] - Matthew Stajan has been deleted from Whalers.</span><br />
+<span style="color:#0080FF">[2018-11-17 16:43:44] - Scott Glennie has been deleted from Wild.</span><br />
+<span style="color:#0080FF">[2018-11-17 16:43:39] - Petr Straka has been deleted from Wild.</span><br />
+<span style="color:#0080FF">[2018-11-17 16:43:32] - Pierre-Marc Bouchard has been deleted from Wild.</span><br />
+<span style="color:#0080FF">[2018-11-17 16:43:28] - Mike Modano has been deleted from Wild.</span><br />
+<span style="color:#0080FF">[2018-11-17 16:43:23] - Lauri Korpikoski has been deleted from Wild.</span><br />
+<span style="color:#0080FF">[2018-11-17 16:43:19] - Cameron Talbot has been deleted from Wild.</span><br />
+[2018-11-17 16:42:48] - Wild roster errors : Not enough Forward available in Pro Team! 9 Dressed. 12 Required.
+Not enough Defenseman available in Pro Team! 3 Dressed. 6 Required.
+Not enough Goalie available in Pro Team! 0 Dressed. 2 Required.
+Not enough Players available in Pro Team! 12 Dressed. 18 Required.
+Some errors will be automatically fixed.
+<br />
+[2018-11-17 16:38:46] - Jacob Josefson was released by Wild.<br />
+[2018-11-17 16:38:46] - Wild paid 0 $ to release Jacob Josefson.<br />
+[2018-11-17 16:38:38] - Wild roster errors : Not enough Forward available in Pro Team! 9 Dressed. 12 Required.
+Not enough Defenseman available in Pro Team! 3 Dressed. 6 Required.
+Not enough Goalie available in Pro Team! 0 Dressed. 2 Required.
+Not enough Players available in Pro Team! 12 Dressed. 18 Required.
+Some errors will be automatically fixed.
+<br />
+[2018-11-17 16:36:56] - Justin Falk was released by Whalers.<br />
+[2018-11-17 16:36:56] - Whalers paid 0 $ to release Justin Falk.<br />
+[2018-11-17 16:36:00] - Vitek Vanecek was released by RedWings.<br />
+[2018-11-17 16:36:00] - RedWings paid 0 $ to release Vitek Vanecek.<br />
+[2018-11-17 16:35:52] - Grand Rapids roster errors : Too many Players available in Farm Team! 20 Dressed. Maximum is 17.
+Not enough Players available in Pro Team! 18 Dressed. 20 Required.
+Some errors will be automatically fixed.
+<br />
+[2018-11-17 16:35:52] - RedWings roster errors : Not enough Right Wings available in Pro Team! 1 Dressed. 3 Required.
+Not enough Forward available in Pro Team! 6 Dressed. 12 Required.
+Not enough Defenseman available in Pro Team! 4 Dressed. 6 Required.
+Not enough Goalie available in Pro Team! 0 Dressed. 2 Required.
+Not enough Players available in Pro Team! 10 Dressed. 18 Required.
+Some errors will be automatically fixed.
+<br />
+[2018-11-17 16:35:50] - RedWings are expected to be under the minimum salary cap by 667 586 $!<br />
+[2018-11-17 16:35:32] - Cole Cassels was released by Rangers.<br />
+[2018-11-17 16:35:32] - Rangers paid 0 $ to release Cole Cassels.<br />
+[2018-11-17 16:35:07] - Auto Roster Function has been run for Penguins.<br />
+[2018-11-17 16:35:07] - Michael Hutchinson of Penguins was sent to farm.<br />
+<span style="color:Black">[2018-11-17 16:35:07] - Scott Darling of Penguins was sent to pro.</span><br />
+[2018-11-17 16:35:07] - Mike Fisher of Penguins was sent to farm.<br />
+<span style="color:Black">[2018-11-17 16:35:07] - Vladislav Namestnikov of Penguins was sent to pro.</span><br />
+[2018-11-17 16:35:04] - Penguins roster errors : Not enough Forward available in Pro Team! 5 Dressed. 12 Required.
+Not enough Defenseman available in Pro Team! 3 Dressed. 6 Required.
+Not enough Goalie available in Pro Team! 0 Dressed. 2 Required.
+Not enough Players available in Pro Team! 8 Dressed. 18 Required.
+Some errors will be automatically fixed.
+<br />
+[2018-11-17 16:35:00] - Zachary Fucale was released by Penguins.<br />
+[2018-11-17 16:35:00] - Penguins paid 0 $ to release Zachary Fucale.<br />
+[2018-11-17 16:34:53] - Shane Prince was released by Penguins.<br />
+[2018-11-17 16:34:53] - Penguins paid 0 $ to release Shane Prince.<br />
+[2018-11-17 16:34:47] - Penguins roster errors : Not enough Forward available in Pro Team! 5 Dressed. 12 Required.
+Not enough Defenseman available in Pro Team! 3 Dressed. 6 Required.
+Not enough Goalie available in Pro Team! 0 Dressed. 2 Required.
+Not enough Players available in Pro Team! 8 Dressed. 18 Required.
+Some errors will be automatically fixed.
+<br />
+[2018-11-17 16:34:25] - Henrik Samuelsson was released by MapleLeafs.<br />
+[2018-11-17 16:34:25] - MapleLeafs paid 0 $ to release Henrik Samuelsson.<br />
+[2018-11-17 16:34:22] - Chris Terry was released by MapleLeafs.<br />
+[2018-11-17 16:34:22] - MapleLeafs paid 0 $ to release Chris Terry.<br />
+[2018-11-17 16:33:46] - Brandon Tanev was released by Lightning.<br />
+[2018-11-17 16:33:46] - Lightning paid 0 $ to release Brandon Tanev.<br />
+[2018-11-17 16:32:49] - Ryan Kujawinski was released by Kings.<br />
+[2018-11-17 16:32:49] - Kings paid 0 $ to release Ryan Kujawinski.<br />
+[2018-11-17 16:32:45] - Oskar Sundqvist was released by Kings.<br />
+[2018-11-17 16:32:45] - Kings paid 0 $ to release Oskar Sundqvist.<br />
+[2018-11-17 16:31:56] - Jeremy Smith was released by Jets.<br />
+[2018-11-17 16:31:56] - Jets paid 0 $ to release Jeremy Smith.<br />
+[2018-11-17 16:31:44] - Alexandre Carrier was released by Jets.<br />
+[2018-11-17 16:31:44] - Jets paid 0 $ to release Alexandre Carrier.<br />
+[2018-11-17 16:31:39] - Tommy Cross was released by Jets.<br />
+[2018-11-17 16:31:39] - Jets paid 0 $ to release Tommy Cross.<br />
+[2018-11-17 16:31:27] - Dennis Rasmussen was released by Jets.<br />
+[2018-11-17 16:31:27] - Jets paid 0 $ to release Dennis Rasmussen.<br />
+[2018-11-17 16:31:13] - St.Johns roster errors : Too many Players available in Farm Team! 19 Dressed. Maximum is 17.
+Some errors will be automatically fixed.
+<br />
+[2018-11-17 16:31:13] - Jets roster errors : Not enough Forward available in Pro Team! 7 Dressed. 12 Required.
+Not enough Defenseman available in Pro Team! 3 Dressed. 6 Required.
+Not enough Goalie available in Pro Team! 0 Dressed. 2 Required.
+Not enough Players available in Pro Team! 10 Dressed. 18 Required.
+Some errors will be automatically fixed.
+<br />
+[2018-11-17 16:30:44] - Joe Colborne was released by Flames.<br />
+[2018-11-17 16:30:44] - Flames paid 0 $ to release Joe Colborne.<br />
+[2018-11-17 16:30:40] - Sergey Tolchinsky was released by Flames.<br />
+[2018-11-17 16:30:40] - Flames paid 0 $ to release Sergey Tolchinsky.<br />
+[2018-11-17 16:30:35] - Emerson Etem was released by Flames.<br />
+[2018-11-17 16:30:35] - Flames paid 0 $ to release Emerson Etem.<br />
+[2018-11-17 16:30:31] - Dmitrij Jaskin was released by Flames.<br />
+[2018-11-17 16:30:31] - Flames paid 0 $ to release Dmitrij Jaskin.<br />
+[2018-11-17 16:29:58] - Andrej Sustr was released by Ducks.<br />
+[2018-11-17 16:29:58] - Ducks paid 0 $ to release Andrej Sustr.<br />
+[2018-11-17 16:29:52] - Frank Corrado was released by Ducks.<br />
+[2018-11-17 16:29:52] - Ducks paid 0 $ to release Frank Corrado.<br />
+[2018-11-17 16:29:16] - Ryan Graves was released by Canucks.<br />
+[2018-11-17 16:29:16] - Canucks paid 0 $ to release Ryan Graves.<br />
+[2018-11-17 16:28:54] - Cameron Gaunce was released by Canadiens.<br />
+[2018-11-17 16:28:54] - Canadiens paid 0 $ to release Cameron Gaunce.<br />
+[2018-11-17 16:27:56] - Auto Lines Function has been run for Blues.<br />
+[2018-11-17 16:27:44] - Auto Roster Function has been run for Blues.<br />
+[2018-11-17 16:27:42] - The first 5000 transactions were erased from the Transaction History.<br />
+<br /><br /><br /><a href="#" class="scrollup">Back to the Top</a><div class="footer">
+Output by the <a href="http://sths.simont.info">SimonT Hockey Simulator (STHS)</a> for Jean-Francois Gagnon<span class="FooterW3C"> - Original Page <a href="http://validator.w3.org/check?uri=referer">W3C HTML5 Valid</a></span>
+<div style="display:none;visibility:hidden"><a href="http://sths.simont.info">Hockey Simulator</a> - <a href="http://sths.simont.info">Hockey Simulation</a> - <a href="http://sths.simont.info">Hockey Manager</a></div></div>
+</body></html>

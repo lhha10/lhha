@@ -1,0 +1,1101 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+<title>LHHA - Farm Team PlayersInfo</title>
+<script src="LHHA0.js"></script>
+<meta name="author" content="Simon Tremblay, sths.simont.info" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Decription" content="Jean-Francois Gagnon - STHS - Version : 3.1.5.5" />
+<link href="STHSMain.css" rel="stylesheet" type="text/css" />
+<style>
+@media screen and (max-width: 1200px) {
+.STHSWarning {display:block;}
+table.basictablesorter tbody td:nth-child(15){display:none;}
+table.basictablesorter thead th:nth-child(15){display:none;}
+table.basictablesorter tbody td:nth-child(16){display:none;}
+table.basictablesorter thead th:nth-child(16){display:none;}
+table.basictablesorter tbody td:nth-child(17){display:none;}
+table.basictablesorter thead th:nth-child(17){display:none;}
+}@media screen and (max-width: 960px) {
+table.basictablesorter tbody td:nth-child(8){display:none;}
+table.basictablesorter thead th:nth-child(8){display:none;}
+table.basictablesorter tbody td:nth-child(9){display:none;}
+table.basictablesorter thead th:nth-child(9){display:none;}
+table.basictablesorter tbody td:nth-child(11){display:none;}
+table.basictablesorter thead th:nth-child(11){display:none;}
+table.basictablesorter tbody td:nth-child(12){display:none;}
+table.basictablesorter thead th:nth-child(12){display:none;}
+}@media screen and (max-width: 720px) {
+table.basictablesorter tbody td:nth-child(2){display:none;}
+table.basictablesorter thead th:nth-child(2){display:none;}
+table.basictablesorter tbody td:nth-child(3){display:none;}
+table.basictablesorter thead th:nth-child(3){display:none;}
+}</style>
+<link href="LHHA0.css" rel="stylesheet" type="text/css" />
+<link href="STHSMain-CSSOverwrite.css" rel="stylesheet" type="text/css" />
+<div class="tabsmenu standard"><ul class="tabmenu-links">
+<li><a class="tabmenuhome" href="./index.html">LHHA0 Home</a></li>
+<li id="STHSMenu-Main"><a href="#tabmenu1">Main</a></li>
+<li id="STHSMenu-ProLeague"><a href="#tabmenu2">Pro League</a></li>
+<li id="STHSMenu-ProTeam"><a href="#tabmenu3">Pro Team</a></li>
+<li id="STHSMenu-FarmLeague"><a href="#tabmenu4">Farm League</a></li>
+<li id="STHSMenu-FarmTeam" class="activemenu"><a href="#tabmenu5">Farm Team</a></li>
+<li id="STHSMenu-League"><a href="#tabmenu6">League</a></li>
+<li id="STHSMenu-Record"><a href="#tabmenu7">Records</a></li>
+<li id="STHSMenu-DirectLink"><a href="#tabmenu8">Team's Direct Link</a></li>
+</ul><div class="tab-contentmenu">
+<div class="tabmenu" id="tabmenu1">
+<table class="MenuSTHS"><tr>
+<td><a href="LHHA0.stc">STHS Client League File</a></td>
+<td><a href="http://sths.simont.info/DownloadLatestClient.php">Latest STHS Client</a></td>
+<td><a href="LHHA0-TodayGames.html">Today's Games</a></td>
+<td><a href="LHHA0-TodayTransactions.html">Today's Transactions</a></td>
+<td><a href="LHHA0-Schedule.html">Schedule </a></td>
+<td class="STHSW1"></td></tr></table></div>
+<div class="tabmenu" id="tabmenu2">
+<table class="MenuSTHS"><tr>
+<td><a href="LHHA0-ProStanding.html">Standing</a></td>
+<td><a href="LHHA0-ProLeaders.html">Leader</a></td>
+<td><a href="LHHA0-ProIndividualLeaders.html">Individual Leaders</a></td>
+<td><a href="LHHA0-ProPowerRanking.html">Power Ranking</a></td>
+<td class="STHSW1"></td></tr></table></div>
+<div class="tabmenu" id="tabmenu3">
+<table class="MenuSTHS"><tr>
+<td><a href="LHHA0-ProTeamRoster.html">Roster</a></td>
+<td><a href="LHHA0-ProTeamScoring.html">Scoring</a></td>
+<td><a href="LHHA0-ProTeamPlayersInfo.html">PlayersInfo</a></td>
+<td><a href="LHHA0-ProTeamLines.html">Lines</a></td>
+<td><a href="LHHA0-ProTeamSchedule.html">Schedule</a></td>
+<td><a href="LHHA0-ProTeamStats.html">Stats</a></td>
+<td><a href="LHHA0-ProTeamStatsVS.html">StatsVS</a></td>
+<td><a href="LHHA0-TeamFinance.html">Finance</a></td>
+<td><a href="LHHA0-TeamProspects.html">Future</a></td>
+<td><a href="LHHA0-TeamHistory.html">History</a></td>
+<td><a href="LHHA0-TeamInjurySuspension.html">Injury/Suspension</a></td>
+<td class="STHSW1"></td></tr></table></div>
+<div class="tabmenu" id="tabmenu4">
+<table class="MenuSTHS"><tr>
+<td><a href="LHHA0-FarmStanding.html">Standing</a></td>
+<td><a href="LHHA0-FarmLeaders.html">Leader</a></td>
+<td><a href="LHHA0-FarmIndividualLeaders.html">Individual Leaders</a></td>
+<td><a href="LHHA0-FarmPowerRanking.html">Power Ranking</a></td>
+<td class="STHSW1"></td></tr></table></div>
+<div class="tabmenu active" id="tabmenu5">
+<table class="MenuSTHS"><tr>
+<td><a href="LHHA0-FarmTeamRoster.html">Roster</a></td>
+<td><a href="LHHA0-FarmTeamScoring.html">Scoring</a></td>
+<td><a href="LHHA0-FarmTeamPlayersInfo.html">PlayersInfo</a></td>
+<td><a href="LHHA0-FarmTeamLines.html">Lines</a></td>
+<td><a href="LHHA0-FarmTeamSchedule.html">Schedule</a></td>
+<td><a href="LHHA0-FarmTeamStats.html">Stats</a></td>
+<td><a href="LHHA0-FarmTeamStatsVS.html">StatsVS</a></td>
+<td class="STHSW1"></td></tr></table></div>
+<div class="tabmenu" id="tabmenu6">
+<table class="MenuSTHS"><tr>
+<td><a href="LHHA0-Coaches.html">Coaches</a></td>
+<td><a href="LHHA0-Transactions.html">Transactions</a></td>
+<td><a href="LHHA0-Waivers.html">Waivers</a></td>
+<td><a href="LHHA0-Unassigned.html">Unassigned</a></td>
+<td><a href="LHHA0-FreeAgents.html">FreeAgents</a></td>
+<td><a href="LHHA0-TeamsAndGMInfo.html">Team/GM</a></td>
+<td><a href="LHHA0-RerateDifference.html">RerateDifference</a></td>
+<td class="STHSW1"></td></tr></table></div>
+<div class="tabmenu" id="tabmenu7">
+<table class="MenuSTHS"><tr>
+<td><a href="LHHA0-LeagueRecords.html">League Records</a></td>
+<td><a href="LHHA0-TeamRecords.html">Team Records</a></td>
+<td class="STHSW1"></td></tr></table></div>
+<div class="tabmenu" id="tabmenu8">
+<table class="MenuSTHS"><tr>
+<td><a href="LHHA0-ProTeamRoster.html#Ducks">Ana</a></td>
+<td><a href="LHHA0-ProTeamRoster.html#Bruins">Bos</a></td>
+<td><a href="LHHA0-ProTeamRoster.html#Sabres">Buf</a></td>
+<td><a href="LHHA0-ProTeamRoster.html#Flames">Cal</a></td>
+<td><a href="LHHA0-ProTeamRoster.html#Blackhawks">Chi</a></td>
+<td><a href="LHHA0-ProTeamRoster.html#Avalanche">Col</a></td>
+<td><a href="LHHA0-ProTeamRoster.html#RedWings">Det</a></td>
+<td><a href="LHHA0-ProTeamRoster.html#Oilers">Edm</a></td>
+<td><a href="LHHA0-ProTeamRoster.html#Whalers">Har</a></td>
+<td><a href="LHHA0-ProTeamRoster.html#Kings">LAK</a></td>
+<td><a href="LHHA0-ProTeamRoster.html#Wild">Min</a></td>
+<td><a href="LHHA0-ProTeamRoster.html#Canadiens">Mon</a></td>
+<td><a href="LHHA0-ProTeamRoster.html#Devils">NJD</a></td>
+<td><a href="LHHA0-ProTeamRoster.html#Islanders">NYI</a></td>
+<td><a href="LHHA0-ProTeamRoster.html#Rangers">NYR</a></td>
+<td><a href="LHHA0-ProTeamRoster.html#Flyers">Phi</a></td>
+<td><a href="LHHA0-ProTeamRoster.html#Penguins">Pit</a></td>
+<td><a href="LHHA0-ProTeamRoster.html#Nordiques">Que</a></td>
+</tr><tr>
+<td><a href="LHHA0-ProTeamRoster.html#Blues">StL</a></td>
+<td><a href="LHHA0-ProTeamRoster.html#Lightning">Tam</a></td>
+<td><a href="LHHA0-ProTeamRoster.html#MapleLeafs">Tor</a></td>
+<td><a href="LHHA0-ProTeamRoster.html#Canucks">Van</a></td>
+<td><a href="LHHA0-ProTeamRoster.html#Capitals">Was</a></td>
+<td><a href="LHHA0-ProTeamRoster.html#Jets">Win</a></td>
+<td colspan="12" class="STHSW1"></td></tr></table>
+</div></div></div><br />
+<table class="STHSTableFullW"><tr><td class="STHSHeaderTitle">Farm Team PlayersInfo</td><td class="STHSHeaderDate">Last Update - 19 novembre 2018 at 19:57</td></tr>
+</table><div class="STHSWarning">Your browser screen resolution is too small for this page. Some information are hidden to keep the page readable.<br /></div>
+<script>jQuery(function($,undefined) {$.basictablesorter.addParser({id: 'thousands',is: function(s) {return false;}, format: function(s) { return s.replace('$','').replace(/,/g,'');}, type: 'numeric' }); $("table").basictablesorter({headers:{11:{sorter:'thousands'},12:{sorter:'thousands'},13:{sorter:'thousands'},14:{sorter:'thousands'},15:{sorter:'thousands'}}});});</script>
+<div class="STHSTopLink"><a id="STHSRosterTop"></a> <a href="#LakeErie">Lake Erie</a> | <a href="#Rockford">Rockford</a> | <a href="#Peoria">Peoria</a> | <a href="#Providence">Providence</a> | <a href="#Hamilton">Hamilton</a> | <a href="#Chicago">Chicago</a> | <a href="#Hershey">Hershey</a> | <a href="#Albany">Albany</a> | <a href="#Syracuse">Syracuse</a> | <a href="#Abbotsford">Abbotsford</a> | <a href="#Adirondack">Adirondack</a> | <a href="#Bridgeport">Bridgeport</a> | <a href="#St.Johns">St.Johns</a> | <a href="#Manchester">Manchester</a> | <a href="#Norfolk">Norfolk</a> | <a href="#Marlies">Marlies</a> | <a href="#Cornwall">Cornwall</a> | <a href="#OklahomaCity">Oklahoma City</a> | <a href="#Wilkes-Barre">Wilkes-Barre</a> | <a href="#Connecticut">Connecticut</a> | <a href="#GrandRapids">Grand Rapids</a> | <a href="#Rochester">Rochester</a> | <a href="#Charlotte">Charlotte</a> | <a href="#Houston">Houston</a> | <a href="javascript:STHS_JS_CloseAll('');">Close All Team View</a> | <a href="javascript:STHS_JS_OpenAll('');">Open All Team View</a>
+</div>
+<h1 class="TeamPlayerInfoFarm_Lak"><a id="LakeErie">Lake Erie</a></h1>
+<div class="STHSTeamLink">
+[ <a href="LHHA0-FarmTeamRoster.html#LakeErie">Farm Team Roster</a> ]
+[ <a href="LHHA0-FarmTeamScoring.html#LakeErie">Farm Team Scoring</a> ]
+[ <a href="LHHA0-FarmTeamPlayersInfo.html#LakeErie">Farm Team PlayersInfo</a> ]
+[ <a href="LHHA0-FarmTeamLines.html#LakeErie">Farm Team Lines</a> ]
+[ <a href="LHHA0-FarmTeamSchedule.html#LakeErie">Farm Team Schedule</a> ]
+[ <a href="LHHA0-FarmTeamStats.html#LakeErie">Farm Team Stats</a> ]
+[ <a href="LHHA0-FarmTeamStatsVS.html#LakeErie">Farm Team StatsVS</a> ]
+[ <a href="LHHA0-ProTeamRoster.html#Avalanche">Pro Team Roster</a> ]
+ [ <a href="#STHSRosterTop"><b>Page Top</b></a> ]
+[ <a href="javascript:STHS_JS_ToggleTeam('STHS_JS_Team_LakeErie');"><b>Close / Open Team View</b></a> ]
+</div><div id="STHS_JS_Team_LakeErie" style="display: block;">
+<table class="basictablesorter"><thead><tr>
+<th class="STHSW200">Player Name</th><th class="STHSW25">CNT</th><th class="STHSW65">PO</th><th class="STHSW25">Age</th><th class="STHSW65">Birthday</th><th class="STHSW65">Weight</th><th class="STHSW55">Height</th><th class="STHSW45">Health<br /># Loss</th><th class="STHSW45">Force<br />Waiver</th><th class="STHSW65">Contract</th><th class="STHSW100">Type</th><th class="STHSW75">One Way<br />Contract</th><th class="STHSW85">Salary #1</th><th class="STHSW85">Salary #2</th><th class="STHSW85">Salary #3</th><th class="STHSW85">Salary #4</th><th class="STHSW85">Salary #5</th></tr></thead>
+<tr><td>Adam McQuaid</td><td>CAN</td><td>D</td><td>30</td><td>1986-10-12</td><td>212 Lbs</td><td>6 ft4</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>2 750 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Alex Lintuniemi</td><td>FIN</td><td>D</td><td>21</td><td>1995-09-23</td><td>231 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Chris Butler</td><td>USA</td><td>D</td><td>30</td><td>1986-10-27</td><td>196 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Christopher Gibson</td><td>FIN</td><td>G</td><td>24</td><td>1992-12-27</td><td>188 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>660 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Martin Frk</td><td>CZE</td><td>LW/RW</td><td>23</td><td>1993-10-05</td><td>205 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>863 333 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Mason McDonald</td><td>CAN</td><td>G</td><td>21</td><td>1996-04-23</td><td>200 Lbs</td><td>6 ft4</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>894 167 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Scottie Upshall</td><td>CAN</td><td>LW/RW</td><td>33</td><td>1983-10-07</td><td>200 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>800 000 $</td><td></td><td></td><td></td><td></td></tr>
+</table><br />
+<table class="basictablesorter"><tr>
+<td class="STHSW100">Total Players</td><td class="STHSW100">Average Age</td><td class="STHSW120">Average Weight</td><td class="STHSW120">Average Height</td><td class="STHSW120">Average Contract</td><td class="STHSW120">Average Salary</td><td class="STHSW140">Players who can play<br />both Pro and Farm </td><td class="STHSW140">Players who can play<br />Pro Only</td><td class="STHSW140">Players who can play<br />Farm Only</td></tr>
+<tr><td>7</td><td>26,0</td><td>205 Lbs</td><td>6 ft 2</td><td>1,00 years</td><td>1 077 500 $</td>
+<td>7</td><td>0</td><td>0</td></tr></table></div>
+<h1 class="TeamPlayerInfoFarm_Rok"><a id="Rockford">Rockford</a></h1>
+<div class="STHSTeamLink">
+[ <a href="LHHA0-FarmTeamRoster.html#Rockford">Farm Team Roster</a> ]
+[ <a href="LHHA0-FarmTeamScoring.html#Rockford">Farm Team Scoring</a> ]
+[ <a href="LHHA0-FarmTeamPlayersInfo.html#Rockford">Farm Team PlayersInfo</a> ]
+[ <a href="LHHA0-FarmTeamLines.html#Rockford">Farm Team Lines</a> ]
+[ <a href="LHHA0-FarmTeamSchedule.html#Rockford">Farm Team Schedule</a> ]
+[ <a href="LHHA0-FarmTeamStats.html#Rockford">Farm Team Stats</a> ]
+[ <a href="LHHA0-FarmTeamStatsVS.html#Rockford">Farm Team StatsVS</a> ]
+[ <a href="LHHA0-ProTeamRoster.html#Blackhawks">Pro Team Roster</a> ]
+ [ <a href="#STHSRosterTop"><b>Page Top</b></a> ]
+[ <a href="javascript:STHS_JS_ToggleTeam('STHS_JS_Team_Rockford');"><b>Close / Open Team View</b></a> ]
+</div><div id="STHS_JS_Team_Rockford" style="display: block;">
+<table class="basictablesorter"><thead><tr>
+<th class="STHSW200">Player Name</th><th class="STHSW25">CNT</th><th class="STHSW65">PO</th><th class="STHSW25">Age</th><th class="STHSW65">Birthday</th><th class="STHSW65">Weight</th><th class="STHSW55">Height</th><th class="STHSW45">Health<br /># Loss</th><th class="STHSW45">Force<br />Waiver</th><th class="STHSW65">Contract</th><th class="STHSW100">Type</th><th class="STHSW75">One Way<br />Contract</th><th class="STHSW85">Salary #1</th><th class="STHSW85">Salary #2</th><th class="STHSW85">Salary #3</th><th class="STHSW85">Salary #4</th><th class="STHSW85">Salary #5</th></tr></thead>
+<tr><td>Adam Erne</td><td>USA</td><td>LW/RW</td><td>22</td><td>1995-04-20</td><td>214 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>800 000 $</td><td>800 000 $</td><td>800 000 $</td><td></td><td></td></tr>
+<tr><td>Adam Tambellini</td><td>CAN</td><td>C/LW</td><td>22</td><td>1994-11-01</td><td>191 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Ales Hemsky</td><td>CZE</td><td>RW</td><td>33</td><td>1983-08-13</td><td>177 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>1 000 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Andrej Sekera</td><td>SVK</td><td>D</td><td>31</td><td>1986-06-08</td><td>200 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>5 500 000 $</td><td>5 500 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Brett Pollock</td><td>CAN</td><td>C/LW/RW</td><td>21</td><td>1996-03-17</td><td>190 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>894 167 $</td><td>894 167 $</td><td></td><td></td><td></td></tr>
+<tr><td>Christopher DiDomenico</td><td>CAN</td><td>C</td><td>28</td><td>1989-02-20</td><td>174 Lbs</td><td>5 ft11</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>612 500 $</td><td>612 500 $</td><td></td><td></td><td></td></tr>
+<tr><td>Eric Gelinas</td><td>CAN</td><td>D</td><td>26</td><td>1991-05-08</td><td>215 Lbs</td><td>6 ft4</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>1 575 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Ethan Bear</td><td>CAN</td><td>D</td><td>20</td><td>1997-06-26</td><td>209 Lbs</td><td>5 ft11</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>773 333 $</td><td>773 333 $</td><td></td><td></td><td></td></tr>
+<tr><td>Jack Roslovic</td><td>USA</td><td>C/RW</td><td>20</td><td>1997-01-29</td><td>187 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>1 106 667 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Jakob Forsbacka Karlsson</td><td>SWE</td><td>C</td><td>20</td><td>1996-10-31</td><td>184 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Jeremy Roy</td><td>CAN</td><td>D</td><td>20</td><td>1997-05-14</td><td>195 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>827 500 $</td><td>827 500 $</td><td></td><td></td><td></td></tr>
+<tr><td>Jon Gillies</td><td>USA</td><td>G</td><td>23</td><td>1994-01-22</td><td>223 Lbs</td><td>6 ft6</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>750 000 $</td><td>750 000 $</td><td>750 000 $</td><td></td><td></td></tr>
+<tr><td>Julien Gauthier</td><td>CAN</td><td>RW</td><td>19</td><td>1997-10-15</td><td>225 Lbs</td><td>6 ft4</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>1 194 167 $</td><td>1 194 167 $</td><td></td><td></td><td></td></tr>
+<tr><td>Justin Kirkland</td><td>CAN</td><td>C</td><td>20</td><td>1996-08-02</td><td>183 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Klim Kostin</td><td>RUS</td><td>RW</td><td>18</td><td>1999-05-05</td><td>212 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>1 137 500 $</td><td>1 137 500 $</td><td></td><td></td><td></td></tr>
+<tr><td>Lance Bouma</td><td>CAN</td><td>C/LW/RW</td><td>27</td><td>1990-03-25</td><td>208 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>1 000 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Logan Brown</td><td>USA</td><td>C</td><td>19</td><td>1998-03-05</td><td>220 Lbs</td><td>6 ft6</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>1 604 167 $</td><td>1 604 167 $</td><td></td><td></td><td></td></tr>
+<tr><td>Luke Kunin</td><td>USA</td><td>C/RW</td><td>19</td><td>1997-12-04</td><td>193 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>1 425 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Peter Cehlarik</td><td>SVK</td><td>LW/RW</td><td>21</td><td>1995-08-02</td><td>202 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Ryan Collins</td><td>USA</td><td>D</td><td>21</td><td>1996-05-06</td><td>216 Lbs</td><td>6 ft5</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td>925 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Ryan Donato</td><td>USA</td><td>C/LW/RW</td><td>21</td><td>1996-04-09</td><td>181 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>1 350 000 $</td><td>1 350 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Scott Harrington</td><td>CAN</td><td>D</td><td>24</td><td>1993-03-10</td><td>207 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>675 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Tomas Jurco</td><td>SVK</td><td>LW/RW</td><td>24</td><td>1992-12-28</td><td>188 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>900 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Tyler Wotherspoon</td><td>CAN</td><td>D</td><td>24</td><td>1993-03-12</td><td>207 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>700 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Ville Husso</td><td>FIN</td><td>G</td><td>22</td><td>1995-02-06</td><td>205 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td></td><td></td><td></td><td></td></tr>
+</table><br />
+<table class="basictablesorter"><tr>
+<td class="STHSW100">Total Players</td><td class="STHSW100">Average Age</td><td class="STHSW120">Average Weight</td><td class="STHSW120">Average Height</td><td class="STHSW120">Average Contract</td><td class="STHSW120">Average Salary</td><td class="STHSW140">Players who can play<br />both Pro and Farm </td><td class="STHSW140">Players who can play<br />Pro Only</td><td class="STHSW140">Players who can play<br />Farm Only</td></tr>
+<tr><td>25</td><td>22,6</td><td>200 Lbs</td><td>6 ft 2</td><td>1,56 years</td><td>1 164 000 $</td>
+<td>25</td><td>0</td><td>0</td></tr></table></div>
+<h1 class="TeamPlayerInfoFarm_Peo"><a id="Peoria">Peoria</a></h1>
+<div class="STHSTeamLink">
+[ <a href="LHHA0-FarmTeamRoster.html#Peoria">Farm Team Roster</a> ]
+[ <a href="LHHA0-FarmTeamScoring.html#Peoria">Farm Team Scoring</a> ]
+[ <a href="LHHA0-FarmTeamPlayersInfo.html#Peoria">Farm Team PlayersInfo</a> ]
+[ <a href="LHHA0-FarmTeamLines.html#Peoria">Farm Team Lines</a> ]
+[ <a href="LHHA0-FarmTeamSchedule.html#Peoria">Farm Team Schedule</a> ]
+[ <a href="LHHA0-FarmTeamStats.html#Peoria">Farm Team Stats</a> ]
+[ <a href="LHHA0-FarmTeamStatsVS.html#Peoria">Farm Team StatsVS</a> ]
+[ <a href="LHHA0-ProTeamRoster.html#Blues">Pro Team Roster</a> ]
+ [ <a href="#STHSRosterTop"><b>Page Top</b></a> ]
+[ <a href="javascript:STHS_JS_ToggleTeam('STHS_JS_Team_Peoria');"><b>Close / Open Team View</b></a> ]
+</div><div id="STHS_JS_Team_Peoria" style="display: block;">
+<table class="basictablesorter"><thead><tr>
+<th class="STHSW200">Player Name</th><th class="STHSW25">CNT</th><th class="STHSW65">PO</th><th class="STHSW25">Age</th><th class="STHSW65">Birthday</th><th class="STHSW65">Weight</th><th class="STHSW55">Height</th><th class="STHSW45">Health<br /># Loss</th><th class="STHSW45">Force<br />Waiver</th><th class="STHSW65">Contract</th><th class="STHSW100">Type</th><th class="STHSW75">One Way<br />Contract</th><th class="STHSW85">Salary #1</th><th class="STHSW85">Salary #2</th><th class="STHSW85">Salary #3</th><th class="STHSW85">Salary #4</th><th class="STHSW85">Salary #5</th></tr></thead>
+<tr><td>Adam Clendening</td><td>USA</td><td>D</td><td>24</td><td>1992-10-26</td><td>196 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>700 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Adin Hill</td><td>CAN</td><td>G</td><td>21</td><td>1996-05-11</td><td>202 Lbs</td><td>6 ft6</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>725 833 $</td><td>725 833 $</td><td>725 833 $</td><td></td><td></td></tr>
+<tr><td>Andy Welinski</td><td>USA</td><td>D</td><td>24</td><td>1993-04-27</td><td>206 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>690 000 $</td><td>690 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Daniel Vladar</td><td>CZE</td><td>G</td><td>19</td><td>1997-08-20</td><td>187 Lbs</td><td>6 ft5</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>728 333 $</td><td>728 333 $</td><td></td><td></td><td></td></tr>
+<tr><td>Dominic Moore</td><td>CAN</td><td>C/LW</td><td>36</td><td>1980-08-03</td><td>192 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>1 000 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Dysin Mayo</td><td>CAN</td><td>D</td><td>20</td><td>1996-08-17</td><td>194 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>798 333 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Jamie McGinn</td><td>CAN</td><td>LW/RW</td><td>28</td><td>1988-08-05</td><td>205 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>3 333 333 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Jesse Gabrielle</td><td>CAN</td><td>LW</td><td>20</td><td>1997-06-17</td><td>204 Lbs</td><td>5 ft11</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>894 167 $</td><td>894 167 $</td><td></td><td></td><td></td></tr>
+<tr><td>Joonas Korpisalo</td><td>FIN</td><td>G</td><td>23</td><td>1994-04-28</td><td>182 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>900 000 $</td><td>900 000 $</td><td>900 000 $</td><td></td><td></td></tr>
+<tr><td>Marko Dano</td><td>AUT</td><td>C/LW/RW</td><td>22</td><td>1994-11-30</td><td>212 Lbs</td><td>5 ft11</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Mikhail Vorobyov</td><td>RUS</td><td>C</td><td>20</td><td>1997-01-05</td><td>207 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td>925 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Nick Cousins</td><td>CAN</td><td>C/LW/RW</td><td>23</td><td>1993-07-20</td><td>185 Lbs</td><td>5 ft11</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>840 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Nicolas Meloche</td><td>CAN</td><td>D</td><td>19</td><td>1997-07-18</td><td>204 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td>925 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Riley Barber</td><td>USA</td><td>RW</td><td>23</td><td>1994-02-07</td><td>190 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td>650 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Rourke Chartier</td><td>CAN</td><td>C</td><td>21</td><td>1996-04-03</td><td>190 Lbs</td><td>5 ft1</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>888 333 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Ryan MacInnis</td><td>USA</td><td>C</td><td>21</td><td>1996-02-14</td><td>185 Lbs</td><td>6 ft4</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>894 167 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Scott Laughton</td><td>CAN</td><td>C</td><td>23</td><td>1994-05-30</td><td>190 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>962 500 $</td><td>962 500 $</td><td></td><td></td><td></td></tr>
+<tr><td>Torrey Mitchell</td><td>CAN</td><td>C/LW/RW</td><td>32</td><td>1985-01-30</td><td>186 Lbs</td><td>5 ft11</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>1 200 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Trent Frederic</td><td>USA</td><td>C</td><td>19</td><td>1998-02-11</td><td>203 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td>925 000 $</td><td></td><td></td><td></td></tr>
+</table><br />
+<table class="basictablesorter"><tr>
+<td class="STHSW100">Total Players</td><td class="STHSW100">Average Age</td><td class="STHSW120">Average Weight</td><td class="STHSW120">Average Height</td><td class="STHSW120">Average Contract</td><td class="STHSW120">Average Salary</td><td class="STHSW140">Players who can play<br />both Pro and Farm </td><td class="STHSW140">Players who can play<br />Pro Only</td><td class="STHSW140">Players who can play<br />Farm Only</td></tr>
+<tr><td>19</td><td>23,1</td><td>196 Lbs</td><td>6 ft 1</td><td>1,63 years</td><td>995 000 $</td>
+<td>19</td><td>0</td><td>0</td></tr></table></div>
+<h1 class="TeamPlayerInfoFarm_Pro"><a id="Providence">Providence</a></h1>
+<div class="STHSTeamLink">
+[ <a href="LHHA0-FarmTeamRoster.html#Providence">Farm Team Roster</a> ]
+[ <a href="LHHA0-FarmTeamScoring.html#Providence">Farm Team Scoring</a> ]
+[ <a href="LHHA0-FarmTeamPlayersInfo.html#Providence">Farm Team PlayersInfo</a> ]
+[ <a href="LHHA0-FarmTeamLines.html#Providence">Farm Team Lines</a> ]
+[ <a href="LHHA0-FarmTeamSchedule.html#Providence">Farm Team Schedule</a> ]
+[ <a href="LHHA0-FarmTeamStats.html#Providence">Farm Team Stats</a> ]
+[ <a href="LHHA0-FarmTeamStatsVS.html#Providence">Farm Team StatsVS</a> ]
+[ <a href="LHHA0-ProTeamRoster.html#Bruins">Pro Team Roster</a> ]
+ [ <a href="#STHSRosterTop"><b>Page Top</b></a> ]
+[ <a href="javascript:STHS_JS_ToggleTeam('STHS_JS_Team_Providence');"><b>Close / Open Team View</b></a> ]
+</div><div id="STHS_JS_Team_Providence" style="display: block;">
+<table class="basictablesorter"><thead><tr>
+<th class="STHSW200">Player Name</th><th class="STHSW25">CNT</th><th class="STHSW65">PO</th><th class="STHSW25">Age</th><th class="STHSW65">Birthday</th><th class="STHSW65">Weight</th><th class="STHSW55">Height</th><th class="STHSW45">Health<br /># Loss</th><th class="STHSW45">Force<br />Waiver</th><th class="STHSW65">Contract</th><th class="STHSW100">Type</th><th class="STHSW75">One Way<br />Contract</th><th class="STHSW85">Salary #1</th><th class="STHSW85">Salary #2</th><th class="STHSW85">Salary #3</th><th class="STHSW85">Salary #4</th><th class="STHSW85">Salary #5</th></tr></thead>
+<tr><td>Adam Gaudette</td><td>USA</td><td>C</td><td>20</td><td>1996-10-03</td><td>170 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>1 491 667 $</td><td>1 491 667 $</td><td></td><td></td><td></td></tr>
+<tr><td>Andrei Mironov</td><td>RUS</td><td>D</td><td>22</td><td>1994-07-29</td><td>194 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td>925 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Andrew Hammond</td><td>CAN</td><td>G</td><td>29</td><td>1988-02-11</td><td>215 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>1 350 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Axel Holmstrom</td><td>SWE</td><td>C/LW/RW</td><td>21</td><td>1996-06-29</td><td>198 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>894 167 $</td><td>894 167 $</td><td></td><td></td><td></td></tr>
+<tr><td>Charlie Lindgren</td><td>USA</td><td>G</td><td>23</td><td>1993-12-18</td><td>182 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>750 000 $</td><td>750 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Dominic Turgeon</td><td>CAN</td><td>C</td><td>21</td><td>1996-02-25</td><td>200 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>919 167 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Gustav Forsling</td><td>SWE</td><td>D</td><td>21</td><td>1996-06-12</td><td>186 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Hudson Fasching</td><td>USA</td><td>LW/RW</td><td>21</td><td>1995-07-28</td><td>204 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>874 125 $</td><td>874 125 $</td><td>874 125 $</td><td></td><td></td></tr>
+<tr><td>Jesse Puljujarvi</td><td>FIN</td><td>LW/RW</td><td>19</td><td>1998-05-07</td><td>211 Lbs</td><td>6 ft4</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>3 425 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Jimmy Vesey</td><td>USA</td><td>LW/RW</td><td>24</td><td>1993-05-26</td><td>206 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>3 775 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Marek Mazanec</td><td>CZE</td><td>G</td><td>25</td><td>1991-07-18</td><td>187 Lbs</td><td>6 ft4</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Nicolas Deslauriers</td><td>CAN</td><td>LW/RW</td><td>26</td><td>1991-02-22</td><td>215 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>950 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Ryan Lindgren</td><td>USA</td><td>D</td><td>19</td><td>1998-02-11</td><td>198 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td>925 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Ryan Pulock</td><td>CAN</td><td>D</td><td>22</td><td>1994-10-06</td><td>214 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>1 363 333 $</td><td>1 363 333 $</td><td></td><td></td><td></td></tr>
+<tr><td>Ryan Reaves</td><td>CAN</td><td>RW</td><td>30</td><td>1987-01-20</td><td>225 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>1 125 000 $</td><td>1 125 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Tage Thompson</td><td>USA</td><td>C/RW</td><td>19</td><td>1997-10-30</td><td>205 Lbs</td><td>6 ft5</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>1 137 500 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Tyler Pitlick</td><td>USA</td><td>C/RW</td><td>25</td><td>1991-11-01</td><td>200 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>1 000 000 $</td><td>1 000 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Vince Dunn</td><td>CAN</td><td>D</td><td>20</td><td>1996-10-29</td><td>203 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>888 333 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Yakov Trenin</td><td>RUS</td><td>C/LW</td><td>20</td><td>1997-01-13</td><td>201 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>894 167 $</td><td>894 167 $</td><td></td><td></td><td></td></tr>
+</table><br />
+<table class="basictablesorter"><tr>
+<td class="STHSW100">Total Players</td><td class="STHSW100">Average Age</td><td class="STHSW120">Average Weight</td><td class="STHSW120">Average Height</td><td class="STHSW120">Average Contract</td><td class="STHSW120">Average Salary</td><td class="STHSW140">Players who can play<br />both Pro and Farm </td><td class="STHSW140">Players who can play<br />Pro Only</td><td class="STHSW140">Players who can play<br />Farm Only</td></tr>
+<tr><td>19</td><td>22,5</td><td>201 Lbs</td><td>6 ft 2</td><td>1,58 years</td><td>1 276 972 $</td>
+<td>19</td><td>0</td><td>0</td></tr></table></div>
+<h1 class="TeamPlayerInfoFarm_Ham"><a id="Hamilton">Hamilton</a></h1>
+<div class="STHSTeamLink">
+[ <a href="LHHA0-FarmTeamRoster.html#Hamilton">Farm Team Roster</a> ]
+[ <a href="LHHA0-FarmTeamScoring.html#Hamilton">Farm Team Scoring</a> ]
+[ <a href="LHHA0-FarmTeamPlayersInfo.html#Hamilton">Farm Team PlayersInfo</a> ]
+[ <a href="LHHA0-FarmTeamLines.html#Hamilton">Farm Team Lines</a> ]
+[ <a href="LHHA0-FarmTeamSchedule.html#Hamilton">Farm Team Schedule</a> ]
+[ <a href="LHHA0-FarmTeamStats.html#Hamilton">Farm Team Stats</a> ]
+[ <a href="LHHA0-FarmTeamStatsVS.html#Hamilton">Farm Team StatsVS</a> ]
+[ <a href="LHHA0-ProTeamRoster.html#Canadiens">Pro Team Roster</a> ]
+ [ <a href="#STHSRosterTop"><b>Page Top</b></a> ]
+[ <a href="javascript:STHS_JS_ToggleTeam('STHS_JS_Team_Hamilton');"><b>Close / Open Team View</b></a> ]
+</div><div id="STHS_JS_Team_Hamilton" style="display: block;">
+<table class="basictablesorter"><thead><tr>
+<th class="STHSW200">Player Name</th><th class="STHSW25">CNT</th><th class="STHSW65">PO</th><th class="STHSW25">Age</th><th class="STHSW65">Birthday</th><th class="STHSW65">Weight</th><th class="STHSW55">Height</th><th class="STHSW45">Health<br /># Loss</th><th class="STHSW45">Force<br />Waiver</th><th class="STHSW65">Contract</th><th class="STHSW100">Type</th><th class="STHSW75">One Way<br />Contract</th><th class="STHSW85">Salary #1</th><th class="STHSW85">Salary #2</th><th class="STHSW85">Salary #3</th><th class="STHSW85">Salary #4</th><th class="STHSW85">Salary #5</th></tr></thead>
+<tr><td>Chase De Leo</td><td>USA</td><td>C/LW</td><td>21</td><td>1995-10-25</td><td>185 Lbs</td><td>5 ft9</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td>650 000 $</td><td>650 000 $</td><td></td><td></td></tr>
+<tr><td>Christian Fischer</td><td>USA</td><td>C/RW</td><td>20</td><td>1997-04-15</td><td>214 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>1 075 833 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Christian Thomas</td><td>CAN</td><td>RW</td><td>25</td><td>1992-05-26</td><td>175 Lbs</td><td>5 ft9</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>575 000 $</td><td>575 000 $</td><td>575 000 $</td><td></td><td></td></tr>
+<tr><td>Filip Chytil</td><td>CZE</td><td>C</td><td>17</td><td>1999-09-05</td><td>202 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>1 275 000 $</td><td>1 275 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Jack Campbell</td><td>USA</td><td>G</td><td>25</td><td>1992-01-09</td><td>197 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>612 500 $</td><td>612 500 $</td><td></td><td></td><td></td></tr>
+<tr><td>Jacob Larsson</td><td>SWE</td><td>D</td><td>20</td><td>1997-04-29</td><td>195 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>894 166 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Jannik Hansen</td><td>DNK</td><td>LW/RW</td><td>31</td><td>1986-03-15</td><td>198 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>2 500 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Jeff Taylor</td><td>USA</td><td>D</td><td>23</td><td>1994-04-13</td><td>181 Lbs</td><td>5 ft1</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>742 500 $</td><td>742 500 $</td><td></td><td></td><td></td></tr>
+<tr><td>Jon Merrill</td><td>USA</td><td>D</td><td>25</td><td>1992-02-03</td><td>205 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>1 375 000 $</td><td>1 375 000 $</td><td>1 375 000 $</td><td></td><td></td></tr>
+<tr><td>Josh Jooris</td><td>CAN</td><td>C/LW/RW</td><td>27</td><td>1990-07-14</td><td>197 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>775 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Julius Honka</td><td>FIN</td><td>D</td><td>21</td><td>1995-12-03</td><td>186 Lbs</td><td>5 ft11</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>1 363 333 $</td><td>1 363 333 $</td><td></td><td></td><td></td></tr>
+<tr><td>Kurtis Gabriel</td><td>CAN</td><td>C/LW/RW</td><td>24</td><td>1993-04-20</td><td>200 Lbs</td><td>6 ft4</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>715 000 $</td><td>715 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Lucas Johansen</td><td>CAN</td><td>D</td><td>19</td><td>1997-11-16</td><td>182 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td>925 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Mason Appleton</td><td>USA</td><td>RW</td><td>21</td><td>1996-01-15</td><td>193 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>758 333 $</td><td>758 333 $</td><td></td><td></td><td></td></tr>
+<tr><td>Nicolas Roy</td><td>CAN</td><td>C/RW</td><td>20</td><td>1997-02-05</td><td>208 Lbs</td><td>6 ft4</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>720 000 $</td><td>720 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Robert Hagg</td><td>SWE</td><td>D</td><td>22</td><td>1995-02-08</td><td>204 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>894 166 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Ryan White</td><td>CAN</td><td>C/RW</td><td>29</td><td>1988-03-17</td><td>200 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>1 000 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Sami Niku</td><td>FIN</td><td>D</td><td>20</td><td>1996-10-10</td><td>176 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>916 667 $</td><td>916 667 $</td><td></td><td></td><td></td></tr>
+<tr><td>Sven Andrighetto</td><td>CHE</td><td>C/LW/RW</td><td>24</td><td>1993-03-21</td><td>188 Lbs</td><td>5 ft10</td><td>15</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Troy Terry</td><td>USA</td><td>RW</td><td>19</td><td>1997-09-10</td><td>175 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td>925 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Tyler Ennis</td><td>CAN</td><td>C/LW/RW</td><td>27</td><td>1989-10-06</td><td>161 Lbs</td><td>5 ft9</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td>650 000 $</td><td>650 000 $</td><td></td><td></td></tr>
+<tr><td>Tyler Moy</td><td>USA</td><td>RW</td><td>21</td><td>1995-07-18</td><td>195 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td>925 000 $</td><td></td><td></td><td></td></tr>
+</table><br />
+<table class="basictablesorter"><tr>
+<td class="STHSW100">Total Players</td><td class="STHSW100">Average Age</td><td class="STHSW120">Average Weight</td><td class="STHSW120">Average Height</td><td class="STHSW120">Average Contract</td><td class="STHSW120">Average Salary</td><td class="STHSW140">Players who can play<br />both Pro and Farm </td><td class="STHSW140">Players who can play<br />Pro Only</td><td class="STHSW140">Players who can play<br />Farm Only</td></tr>
+<tr><td>22</td><td>22,8</td><td>192 Lbs</td><td>6 ft 0</td><td>1,86 years</td><td>950 795 $</td>
+<td>22</td><td>0</td><td>0</td></tr></table></div>
+<h1 class="TeamPlayerInfoFarm_Chi"><a id="Chicago">Chicago</a></h1>
+<div class="STHSTeamLink">
+[ <a href="LHHA0-FarmTeamRoster.html#Chicago">Farm Team Roster</a> ]
+[ <a href="LHHA0-FarmTeamScoring.html#Chicago">Farm Team Scoring</a> ]
+[ <a href="LHHA0-FarmTeamPlayersInfo.html#Chicago">Farm Team PlayersInfo</a> ]
+[ <a href="LHHA0-FarmTeamLines.html#Chicago">Farm Team Lines</a> ]
+[ <a href="LHHA0-FarmTeamSchedule.html#Chicago">Farm Team Schedule</a> ]
+[ <a href="LHHA0-FarmTeamStats.html#Chicago">Farm Team Stats</a> ]
+[ <a href="LHHA0-FarmTeamStatsVS.html#Chicago">Farm Team StatsVS</a> ]
+[ <a href="LHHA0-ProTeamRoster.html#Canucks">Pro Team Roster</a> ]
+ [ <a href="#STHSRosterTop"><b>Page Top</b></a> ]
+[ <a href="javascript:STHS_JS_ToggleTeam('STHS_JS_Team_Chicago');"><b>Close / Open Team View</b></a> ]
+</div><div id="STHS_JS_Team_Chicago" style="display: block;">
+<table class="basictablesorter"><thead><tr>
+<th class="STHSW200">Player Name</th><th class="STHSW25">CNT</th><th class="STHSW65">PO</th><th class="STHSW25">Age</th><th class="STHSW65">Birthday</th><th class="STHSW65">Weight</th><th class="STHSW55">Height</th><th class="STHSW45">Health<br /># Loss</th><th class="STHSW45">Force<br />Waiver</th><th class="STHSW65">Contract</th><th class="STHSW100">Type</th><th class="STHSW75">One Way<br />Contract</th><th class="STHSW85">Salary #1</th><th class="STHSW85">Salary #2</th><th class="STHSW85">Salary #3</th><th class="STHSW85">Salary #4</th><th class="STHSW85">Salary #5</th></tr></thead>
+<tr><td>Alex Chiasson</td><td>CAN</td><td>RW</td><td>26</td><td>1990-10-01</td><td>208 Lbs</td><td>6 ft4</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Alex Formenton</td><td>CAN</td><td>LW</td><td>17</td><td>1999-09-13</td><td>165 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td>925 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Alexandar Georgiev</td><td>RUS</td><td>G</td><td>21</td><td>1996-02-10</td><td>180 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>792 500 $</td><td>792 500 $</td><td></td><td></td><td></td></tr>
+<tr><td>Anders Bjork</td><td>USA</td><td>C/LW/RW</td><td>20</td><td>1996-08-05</td><td>186 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>1 066 667 $</td><td>1 066 667 $</td><td></td><td></td><td></td></tr>
+<tr><td>Andreas Johnsson</td><td>SWE</td><td>LW</td><td>22</td><td>1994-11-21</td><td>180 Lbs</td><td>5 ft10</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Anthony Duclair</td><td>CAN</td><td>LW/RW</td><td>21</td><td>1995-08-26</td><td>191 Lbs</td><td>5 ft11</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>1 200 000 $</td><td>1 200 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Antoine Roussel</td><td>FRA</td><td>LW/RW</td><td>27</td><td>1989-11-21</td><td>195 Lbs</td><td>5 ft11</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>3 000 000 $</td><td>3 000 000 $</td><td>3 000 000 $</td><td></td><td></td></tr>
+<tr><td>Anton Khudobin</td><td>RUS</td><td>G</td><td>31</td><td>1986-05-07</td><td>195 Lbs</td><td>5 ft11</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>1 200 000 $</td><td>1 200 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Anton Slepyshev</td><td>RUS</td><td>LW/RW</td><td>23</td><td>1994-05-13</td><td>221 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td>925 000 $</td><td>925 000 $</td><td></td><td></td></tr>
+<tr><td>Cal Petersen</td><td>USA</td><td>G</td><td>22</td><td>1994-10-19</td><td>182 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td>925 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Casey Mittelstadt</td><td>USA</td><td>C</td><td>18</td><td>1998-11-22</td><td>201 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>1 491 667 $</td><td>1 491 667 $</td><td></td><td></td><td></td></tr>
+<tr><td>Chris Wideman</td><td>USA</td><td>D</td><td>27</td><td>1990-01-07</td><td>183 Lbs</td><td>5 ft10</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>800 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Christian Djoos</td><td>SWE</td><td>D</td><td>22</td><td>1994-08-06</td><td>169 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td>650 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Daniel Carr</td><td>CAN</td><td>LW</td><td>25</td><td>1991-11-01</td><td>193 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>750 000 $</td><td>750 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Dylan Sikura</td><td>CAN</td><td>RW</td><td>22</td><td>1995-06-01</td><td>158 Lbs</td><td>5 ft11</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td>925 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Fredrik Claesson</td><td>SWE</td><td>D</td><td>24</td><td>1992-11-24</td><td>200 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Haydn Fleury</td><td>CAN</td><td>D</td><td>21</td><td>1996-07-08</td><td>221 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>1 713 333 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Jack Dougherty</td><td>USA</td><td>D</td><td>21</td><td>1996-05-25</td><td>196 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>902 500 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Kailer Yamamoto</td><td>USA</td><td>RW</td><td>18</td><td>1998-09-29</td><td>154 Lbs</td><td>5 ft8</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>1 155 000 $</td><td>1 155 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Klas Dahlbeck</td><td>SWE</td><td>D</td><td>26</td><td>1991-07-06</td><td>207 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>850 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Laurent Brossoit</td><td>CAN</td><td>G</td><td>24</td><td>1993-03-23</td><td>204 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td>650 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Matt Grzelcyk</td><td>USA</td><td>D</td><td>23</td><td>1994-01-05</td><td>174 Lbs</td><td>5 ft9</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>1 400 000 $</td><td>1 400 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Michal Kempny</td><td>CZE</td><td>D</td><td>26</td><td>1990-09-08</td><td>194 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>900 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Nic Petan</td><td>CAN</td><td>C/LW</td><td>22</td><td>1995-03-22</td><td>179 Lbs</td><td>5 ft9</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>874 125 $</td><td>874 125 $</td><td>874 125 $</td><td></td><td></td></tr>
+<tr><td>Nicolas Aube-Kubel</td><td>CAN</td><td>RW</td><td>21</td><td>1996-05-10</td><td>187 Lbs</td><td>5 ft11</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>871 667 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Nikita Soshnikov</td><td>RUS</td><td>LW/RW</td><td>23</td><td>1993-10-14</td><td>185 Lbs</td><td>5 ft11</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>800 000 $</td><td>800 000 $</td><td>800 000 $</td><td></td><td></td></tr>
+<tr><td>Niklas Svedberg</td><td>SWE</td><td>G</td><td>27</td><td>1989-09-04</td><td>163 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>500 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Noel Acciari</td><td>USA</td><td>C</td><td>25</td><td>1991-12-01</td><td>208 Lbs</td><td>5 ft10</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>725 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Oskar Lindblom</td><td>SWE</td><td>LW</td><td>20</td><td>1996-08-15</td><td>191 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td>925 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Rocco Grimaldi</td><td>USA</td><td>C</td><td>24</td><td>1993-02-08</td><td>180 Lbs</td><td>5 ft6</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Travis Konecny</td><td>CAN</td><td>C/LW/RW</td><td>20</td><td>1997-03-11</td><td>175 Lbs</td><td>5 ft10</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>894 167 $</td><td>894 167 $</td><td>894 167 $</td><td></td><td></td></tr>
+<tr><td>Victor Mete</td><td>CAN</td><td>D</td><td>19</td><td>1998-06-07</td><td>184 Lbs</td><td>5 ft9</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>870 000 $</td><td>870 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Vili Saarijarvi</td><td>FIN</td><td>D</td><td>20</td><td>1997-05-15</td><td>182 Lbs</td><td>5 ft1</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>894 167 $</td><td>894 167 $</td><td></td><td></td><td></td></tr>
+</table><br />
+<table class="basictablesorter"><tr>
+<td class="STHSW100">Total Players</td><td class="STHSW100">Average Age</td><td class="STHSW120">Average Weight</td><td class="STHSW120">Average Height</td><td class="STHSW120">Average Contract</td><td class="STHSW120">Average Salary</td><td class="STHSW140">Players who can play<br />both Pro and Farm </td><td class="STHSW140">Players who can play<br />Pro Only</td><td class="STHSW140">Players who can play<br />Farm Only</td></tr>
+<tr><td>33</td><td>22,7</td><td>188 Lbs</td><td>5 ft 11</td><td>1,79 years</td><td>983 357 $</td>
+<td>33</td><td>0</td><td>0</td></tr></table></div>
+<h1 class="TeamPlayerInfoFarm_Her"><a id="Hershey">Hershey</a></h1>
+<div class="STHSTeamLink">
+[ <a href="LHHA0-FarmTeamRoster.html#Hershey">Farm Team Roster</a> ]
+[ <a href="LHHA0-FarmTeamScoring.html#Hershey">Farm Team Scoring</a> ]
+[ <a href="LHHA0-FarmTeamPlayersInfo.html#Hershey">Farm Team PlayersInfo</a> ]
+[ <a href="LHHA0-FarmTeamLines.html#Hershey">Farm Team Lines</a> ]
+[ <a href="LHHA0-FarmTeamSchedule.html#Hershey">Farm Team Schedule</a> ]
+[ <a href="LHHA0-FarmTeamStats.html#Hershey">Farm Team Stats</a> ]
+[ <a href="LHHA0-FarmTeamStatsVS.html#Hershey">Farm Team StatsVS</a> ]
+[ <a href="LHHA0-ProTeamRoster.html#Capitals">Pro Team Roster</a> ]
+ [ <a href="#STHSRosterTop"><b>Page Top</b></a> ]
+[ <a href="javascript:STHS_JS_ToggleTeam('STHS_JS_Team_Hershey');"><b>Close / Open Team View</b></a> ]
+</div><div id="STHS_JS_Team_Hershey" style="display: block;">
+<table class="basictablesorter"><thead><tr>
+<th class="STHSW200">Player Name</th><th class="STHSW25">CNT</th><th class="STHSW65">PO</th><th class="STHSW25">Age</th><th class="STHSW65">Birthday</th><th class="STHSW65">Weight</th><th class="STHSW55">Height</th><th class="STHSW45">Health<br /># Loss</th><th class="STHSW45">Force<br />Waiver</th><th class="STHSW65">Contract</th><th class="STHSW100">Type</th><th class="STHSW75">One Way<br />Contract</th><th class="STHSW85">Salary #1</th><th class="STHSW85">Salary #2</th><th class="STHSW85">Salary #3</th><th class="STHSW85">Salary #4</th><th class="STHSW85">Salary #5</th></tr></thead>
+<tr><td>Connor Ingram</td><td>CAN</td><td>G</td><td>20</td><td>1997-03-31</td><td>204 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>759 167 $</td><td>759 167 $</td><td></td><td></td><td></td></tr>
+<tr><td>Craig Smith</td><td>USA</td><td>C/RW</td><td>27</td><td>1989-09-05</td><td>208 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>4 250 000 $</td><td>4 250 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Dominik Simon</td><td>CZE</td><td>C/LW/RW</td><td>22</td><td>1994-08-08</td><td>190 Lbs</td><td>5 ft11</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>750 000 $</td><td>750 000 $</td><td>750 000 $</td><td></td><td></td></tr>
+<tr><td>Greg McKegg</td><td>CAN</td><td>C/LW</td><td>25</td><td>1992-06-17</td><td>191 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>715 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>J.T. Brown</td><td>USA</td><td>RW</td><td>27</td><td>1990-07-02</td><td>169 Lbs</td><td>5 ft10</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>1 250 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>JC Lipon</td><td>CAN</td><td>C/RW</td><td>24</td><td>1993-07-10</td><td>183 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td>650 000 $</td><td>650 000 $</td><td></td><td></td></tr>
+<tr><td>Jeremy Gregoire</td><td>CAN</td><td>C</td><td>21</td><td>1995-09-05</td><td>193 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>633 333 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Jordan Subban</td><td>CAN</td><td>D</td><td>22</td><td>1995-03-03</td><td>178 Lbs</td><td>5 ft9</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td>650 000 $</td><td>650 000 $</td><td></td><td></td></tr>
+<tr><td>Joshua Ho-Sang</td><td>CAN</td><td>RW</td><td>21</td><td>1996-01-22</td><td>173 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>1 075 833 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Kerby Rychel</td><td>USA</td><td>LW/RW</td><td>22</td><td>1994-10-07</td><td>213 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>725 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Michael Spacek</td><td>CZE</td><td>C</td><td>20</td><td>1997-04-09</td><td>187 Lbs</td><td>5 ft1</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>850 000 $</td><td>850 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Tobias Lindberg</td><td>SWE</td><td>LW/RW</td><td>21</td><td>1995-07-22</td><td>215 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>1 700 000 $</td><td>1 700 000 $</td><td>1 700 000 $</td><td></td><td></td></tr>
+</table><br />
+<table class="basictablesorter"><tr>
+<td class="STHSW100">Total Players</td><td class="STHSW100">Average Age</td><td class="STHSW120">Average Weight</td><td class="STHSW120">Average Height</td><td class="STHSW120">Average Contract</td><td class="STHSW120">Average Salary</td><td class="STHSW140">Players who can play<br />both Pro and Farm </td><td class="STHSW140">Players who can play<br />Pro Only</td><td class="STHSW140">Players who can play<br />Farm Only</td></tr>
+<tr><td>12</td><td>22,7</td><td>192 Lbs</td><td>5 ft 11</td><td>1,92 years</td><td>1 167 361 $</td>
+<td>12</td><td>0</td><td>0</td></tr></table></div>
+<h1 class="TeamPlayerInfoFarm_Alb"><a id="Albany">Albany</a></h1>
+<div class="STHSTeamLink">
+[ <a href="LHHA0-FarmTeamRoster.html#Albany">Farm Team Roster</a> ]
+[ <a href="LHHA0-FarmTeamScoring.html#Albany">Farm Team Scoring</a> ]
+[ <a href="LHHA0-FarmTeamPlayersInfo.html#Albany">Farm Team PlayersInfo</a> ]
+[ <a href="LHHA0-FarmTeamLines.html#Albany">Farm Team Lines</a> ]
+[ <a href="LHHA0-FarmTeamSchedule.html#Albany">Farm Team Schedule</a> ]
+[ <a href="LHHA0-FarmTeamStats.html#Albany">Farm Team Stats</a> ]
+[ <a href="LHHA0-FarmTeamStatsVS.html#Albany">Farm Team StatsVS</a> ]
+[ <a href="LHHA0-ProTeamRoster.html#Devils">Pro Team Roster</a> ]
+ [ <a href="#STHSRosterTop"><b>Page Top</b></a> ]
+[ <a href="javascript:STHS_JS_ToggleTeam('STHS_JS_Team_Albany');"><b>Close / Open Team View</b></a> ]
+</div><div id="STHS_JS_Team_Albany" style="display: block;">
+<table class="basictablesorter"><thead><tr>
+<th class="STHSW200">Player Name</th><th class="STHSW25">CNT</th><th class="STHSW65">PO</th><th class="STHSW25">Age</th><th class="STHSW65">Birthday</th><th class="STHSW65">Weight</th><th class="STHSW55">Height</th><th class="STHSW45">Health<br /># Loss</th><th class="STHSW45">Force<br />Waiver</th><th class="STHSW65">Contract</th><th class="STHSW100">Type</th><th class="STHSW75">One Way<br />Contract</th><th class="STHSW85">Salary #1</th><th class="STHSW85">Salary #2</th><th class="STHSW85">Salary #3</th><th class="STHSW85">Salary #4</th><th class="STHSW85">Salary #5</th></tr></thead>
+<tr><td>Blake Hillman</td><td>USA</td><td>D</td><td>21</td><td>1996-01-26</td><td>180 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td>925 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Blake Siebenaler</td><td>USA</td><td>D</td><td>21</td><td>1996-02-27</td><td>208 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>910 833 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Brandon Halverson</td><td>USA</td><td>G</td><td>21</td><td>1996-03-29</td><td>209 Lbs</td><td>6 ft4</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>894 167 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Brendan Lemieux</td><td>USA</td><td>LW</td><td>21</td><td>1996-03-15</td><td>210 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>1 039 167 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Curtis Lazar</td><td>CAN</td><td>C/RW</td><td>22</td><td>1995-02-02</td><td>209 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>950 000 $</td><td>950 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Dennis Yan</td><td>USA</td><td>LW</td><td>20</td><td>1997-04-14</td><td>197 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>728 333 $</td><td>728 333 $</td><td></td><td></td><td></td></tr>
+<tr><td>Frederic Allard</td><td>CAN</td><td>D</td><td>19</td><td>1997-12-27</td><td>179 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>714 166 $</td><td>714 166 $</td><td></td><td></td><td></td></tr>
+<tr><td>Frederik Gauthier</td><td>CAN</td><td>C</td><td>22</td><td>1995-04-26</td><td>232 Lbs</td><td>6 ft5</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>675 000 $</td><td>675 000 $</td><td>675 000 $</td><td></td><td></td></tr>
+<tr><td>Jansen Harkins</td><td>USA</td><td>C</td><td>20</td><td>1997-05-23</td><td>182 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>767 500 $</td><td>767 500 $</td><td></td><td></td><td></td></tr>
+<tr><td>Jesper Bratt</td><td>SWE</td><td>LW/RW</td><td>18</td><td>1998-07-30</td><td>175 Lbs</td><td>5 ft10</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>749 167 $</td><td>749 167 $</td><td></td><td></td><td></td></tr>
+<tr><td>Kyle Capobianco</td><td>CAN</td><td>D</td><td>19</td><td>1997-08-13</td><td>196 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>894 167 $</td><td>894 167 $</td><td></td><td></td><td></td></tr>
+<tr><td>Mark Streit</td><td>CHE</td><td>D</td><td>39</td><td>1977-12-11</td><td>186 Lbs</td><td>5 ft11</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>1 000 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Matt Puempel</td><td>CAN</td><td>LW/RW</td><td>24</td><td>1993-01-24</td><td>205 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>900 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Nathan Bastian</td><td>CAN</td><td>RW</td><td>19</td><td>1997-12-06</td><td>205 Lbs</td><td>6 ft4</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td>925 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Nick Paul</td><td>CAN</td><td>C/LW</td><td>22</td><td>1995-03-20</td><td>230 Lbs</td><td>6 ft4</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td>650 000 $</td><td>650 000 $</td><td></td><td></td></tr>
+<tr><td>Owen Tippett</td><td>CAN</td><td>RW</td><td>18</td><td>1999-02-16</td><td>200 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>1 757 500 $</td><td>1 757 500 $</td><td></td><td></td><td></td></tr>
+<tr><td>Philippe Myers</td><td>CAN</td><td>D</td><td>20</td><td>1997-01-25</td><td>210 Lbs</td><td>6 ft5</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>678 333 $</td><td>678 333 $</td><td></td><td></td><td></td></tr>
+<tr><td>Thomas Schemitsch</td><td>CAN</td><td>D</td><td>20</td><td>1996-10-26</td><td>200 Lbs</td><td>6 ft4</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td></td><td></td><td></td><td></td></tr>
+</table><br />
+<table class="basictablesorter"><tr>
+<td class="STHSW100">Total Players</td><td class="STHSW100">Average Age</td><td class="STHSW120">Average Weight</td><td class="STHSW120">Average Height</td><td class="STHSW120">Average Contract</td><td class="STHSW120">Average Salary</td><td class="STHSW140">Players who can play<br />both Pro and Farm </td><td class="STHSW140">Players who can play<br />Pro Only</td><td class="STHSW140">Players who can play<br />Farm Only</td></tr>
+<tr><td>18</td><td>21,4</td><td>201 Lbs</td><td>6 ft 2</td><td>1,78 years</td><td>893 519 $</td>
+<td>18</td><td>0</td><td>0</td></tr></table></div>
+<h1 class="TeamPlayerInfoFarm_Syr"><a id="Syracuse">Syracuse</a></h1>
+<div class="STHSTeamLink">
+[ <a href="LHHA0-FarmTeamRoster.html#Syracuse">Farm Team Roster</a> ]
+[ <a href="LHHA0-FarmTeamScoring.html#Syracuse">Farm Team Scoring</a> ]
+[ <a href="LHHA0-FarmTeamPlayersInfo.html#Syracuse">Farm Team PlayersInfo</a> ]
+[ <a href="LHHA0-FarmTeamLines.html#Syracuse">Farm Team Lines</a> ]
+[ <a href="LHHA0-FarmTeamSchedule.html#Syracuse">Farm Team Schedule</a> ]
+[ <a href="LHHA0-FarmTeamStats.html#Syracuse">Farm Team Stats</a> ]
+[ <a href="LHHA0-FarmTeamStatsVS.html#Syracuse">Farm Team StatsVS</a> ]
+[ <a href="LHHA0-ProTeamRoster.html#Ducks">Pro Team Roster</a> ]
+ [ <a href="#STHSRosterTop"><b>Page Top</b></a> ]
+[ <a href="javascript:STHS_JS_ToggleTeam('STHS_JS_Team_Syracuse');"><b>Close / Open Team View</b></a> ]
+</div><div id="STHS_JS_Team_Syracuse" style="display: block;">
+<table class="basictablesorter"><thead><tr>
+<th class="STHSW200">Player Name</th><th class="STHSW25">CNT</th><th class="STHSW65">PO</th><th class="STHSW25">Age</th><th class="STHSW65">Birthday</th><th class="STHSW65">Weight</th><th class="STHSW55">Height</th><th class="STHSW45">Health<br /># Loss</th><th class="STHSW45">Force<br />Waiver</th><th class="STHSW65">Contract</th><th class="STHSW100">Type</th><th class="STHSW75">One Way<br />Contract</th><th class="STHSW85">Salary #1</th><th class="STHSW85">Salary #2</th><th class="STHSW85">Salary #3</th><th class="STHSW85">Salary #4</th><th class="STHSW85">Salary #5</th></tr></thead>
+<tr><td>Alex Tuch</td><td>USA</td><td>LW/RW</td><td>21</td><td>1996-05-10</td><td>222 Lbs</td><td>6 ft4</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>1 350 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Andre Burakovsky</td><td>SWE</td><td>LW/RW</td><td>22</td><td>1995-02-09</td><td>201 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>3 000 000 $</td><td>3 000 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Brendan Guhle</td><td>CAN</td><td>D</td><td>19</td><td>1997-07-29</td><td>196 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>888 333 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Drake Caggiula</td><td>CAN</td><td>C/LW/RW</td><td>23</td><td>1994-06-20</td><td>185 Lbs</td><td>5 ft10</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>1 350 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Gustav Olofsson</td><td>SWE</td><td>D</td><td>22</td><td>1994-12-01</td><td>196 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>725 000 $</td><td>725 000 $</td><td>725 000 $</td><td></td><td></td></tr>
+<tr><td>Jake Walman</td><td>CAN</td><td>D</td><td>21</td><td>1996-02-20</td><td>170 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>0 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Jayce Hawryluk</td><td>CAN</td><td>C/RW</td><td>21</td><td>1996-01-01</td><td>186 Lbs</td><td>5 ft1</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Joakim Nordstrom</td><td>SWE</td><td>C/LW/RW</td><td>25</td><td>1992-02-25</td><td>189 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>1 275 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Johnny Oduya</td><td>SWE</td><td>D</td><td>35</td><td>1981-10-01</td><td>191 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>1 000 000 $</td><td>1 000 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Jordan Greenway</td><td>USA</td><td>C/LW/RW</td><td>20</td><td>1997-02-16</td><td>226 Lbs</td><td>6 ft6</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>916 666 $</td><td>916 666 $</td><td></td><td></td><td></td></tr>
+<tr><td>Josh Leivo</td><td>CAN</td><td>LW/RW</td><td>24</td><td>1993-05-26</td><td>210 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>612 500 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Kevan Miller</td><td>USA</td><td>D</td><td>29</td><td>1987-11-15</td><td>210 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>2 500 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Kyle Connor</td><td>USA</td><td>LW</td><td>20</td><td>1996-12-09</td><td>182 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>1 775 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Lucas Wallmark</td><td>SWE</td><td>C</td><td>21</td><td>1995-09-05</td><td>176 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>750 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Nathan Beaulieu</td><td>CAN</td><td>D</td><td>24</td><td>1992-12-05</td><td>200 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>1 000 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Nino Niederreiter</td><td>CHE</td><td>LW/RW</td><td>24</td><td>1992-09-08</td><td>216 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>2 666 667 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Pavel Buchnevich</td><td>RUS</td><td>LW/RW</td><td>22</td><td>1995-04-17</td><td>191 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Philipp Grubauer</td><td>DEU</td><td>G</td><td>25</td><td>1991-11-25</td><td>191 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>750 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Riley Sheahan</td><td>CAN</td><td>C/LW/RW</td><td>25</td><td>1991-12-07</td><td>214 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>2 075 000 $</td><td>2 075 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Ryan Hartman</td><td>USA</td><td>LW/RW</td><td>22</td><td>1994-09-20</td><td>181 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>863 333 $</td><td>863 333 $</td><td></td><td></td><td></td></tr>
+<tr><td>Trevor van Riemsdyk</td><td>USA</td><td>D</td><td>25</td><td>1991-07-24</td><td>188 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>825 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Ville Pokka</td><td>FIN</td><td>D</td><td>23</td><td>1994-03-06</td><td>206 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td>650 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Vladislav Kamenev</td><td>RUS</td><td>C/LW</td><td>20</td><td>1996-08-12</td><td>194 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>894 167 $</td><td>894 167 $</td><td>894 167 $</td><td></td><td></td></tr>
+</table><br />
+<table class="basictablesorter"><tr>
+<td class="STHSW100">Total Players</td><td class="STHSW100">Average Age</td><td class="STHSW120">Average Weight</td><td class="STHSW120">Average Height</td><td class="STHSW120">Average Contract</td><td class="STHSW120">Average Salary</td><td class="STHSW140">Players who can play<br />both Pro and Farm </td><td class="STHSW140">Players who can play<br />Pro Only</td><td class="STHSW140">Players who can play<br />Farm Only</td></tr>
+<tr><td>23</td><td>23,2</td><td>197 Lbs</td><td>6 ft 1</td><td>1,43 years</td><td>1 205 072 $</td>
+<td>23</td><td>0</td><td>0</td></tr></table></div>
+<h1 class="TeamPlayerInfoFarm_Abb"><a id="Abbotsford">Abbotsford</a></h1>
+<div class="STHSTeamLink">
+[ <a href="LHHA0-FarmTeamRoster.html#Abbotsford">Farm Team Roster</a> ]
+[ <a href="LHHA0-FarmTeamScoring.html#Abbotsford">Farm Team Scoring</a> ]
+[ <a href="LHHA0-FarmTeamPlayersInfo.html#Abbotsford">Farm Team PlayersInfo</a> ]
+[ <a href="LHHA0-FarmTeamLines.html#Abbotsford">Farm Team Lines</a> ]
+[ <a href="LHHA0-FarmTeamSchedule.html#Abbotsford">Farm Team Schedule</a> ]
+[ <a href="LHHA0-FarmTeamStats.html#Abbotsford">Farm Team Stats</a> ]
+[ <a href="LHHA0-FarmTeamStatsVS.html#Abbotsford">Farm Team StatsVS</a> ]
+[ <a href="LHHA0-ProTeamRoster.html#Flames">Pro Team Roster</a> ]
+ [ <a href="#STHSRosterTop"><b>Page Top</b></a> ]
+[ <a href="javascript:STHS_JS_ToggleTeam('STHS_JS_Team_Abbotsford');"><b>Close / Open Team View</b></a> ]
+</div><div id="STHS_JS_Team_Abbotsford" style="display: block;">
+<table class="basictablesorter"><thead><tr>
+<th class="STHSW200">Player Name</th><th class="STHSW25">CNT</th><th class="STHSW65">PO</th><th class="STHSW25">Age</th><th class="STHSW65">Birthday</th><th class="STHSW65">Weight</th><th class="STHSW55">Height</th><th class="STHSW45">Health<br /># Loss</th><th class="STHSW45">Force<br />Waiver</th><th class="STHSW65">Contract</th><th class="STHSW100">Type</th><th class="STHSW75">One Way<br />Contract</th><th class="STHSW85">Salary #1</th><th class="STHSW85">Salary #2</th><th class="STHSW85">Salary #3</th><th class="STHSW85">Salary #4</th><th class="STHSW85">Salary #5</th></tr></thead>
+<tr><td>Alexei Lipanov</td><td>RUS</td><td>C</td><td>17</td><td>1999-08-17</td><td>165 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>778 333 $</td><td>778 333 $</td><td></td><td></td><td></td></tr>
+<tr><td>Anthony Richard</td><td>CAN</td><td>C</td><td>20</td><td>1996-12-20</td><td>163 Lbs</td><td>5 ft1</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>691 667 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Carter Hutton</td><td>CAN</td><td>G</td><td>31</td><td>1985-12-19</td><td>202 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>1 125 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Dylan McIlrath</td><td>CAN</td><td>D</td><td>25</td><td>1992-04-20</td><td>236 Lbs</td><td>6 ft5</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>800 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Eric Comrie</td><td>CAN</td><td>G</td><td>22</td><td>1995-07-06</td><td>175 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>894 166 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Evan Rodrigues</td><td>CAN</td><td>C/LW/RW</td><td>23</td><td>1993-07-28</td><td>182 Lbs</td><td>5 ft11</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td>650 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Francis Perron</td><td>CAN</td><td>LW</td><td>21</td><td>1996-04-18</td><td>166 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>783 333 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Ian McCoshen</td><td>USA</td><td>D</td><td>21</td><td>1995-08-05</td><td>217 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>1 025 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Jeremy Bracco</td><td>USA</td><td>RW</td><td>20</td><td>1997-03-17</td><td>171 Lbs</td><td>5 ft1</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td>925 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Keegan Kolesar</td><td>CAN</td><td>RW</td><td>20</td><td>1997-04-08</td><td>227 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>702 500 $</td><td>702 500 $</td><td></td><td></td><td></td></tr>
+<tr><td>Kevin Connauton</td><td>CAN</td><td>D</td><td>27</td><td>1990-02-23</td><td>205 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>1 000 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Lee Stempniak</td><td>USA</td><td>C/RW</td><td>34</td><td>1983-02-04</td><td>195 Lbs</td><td>5 ft11</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>2 500 000 $</td><td>2 500 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Linus Ullmark</td><td>SWE</td><td>G</td><td>23</td><td>1993-07-31</td><td>221 Lbs</td><td>6 ft4</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>750 000 $</td><td>750 000 $</td><td>750 000 $</td><td></td><td></td></tr>
+<tr><td>Marcus Pettersson</td><td>SWE</td><td>D</td><td>21</td><td>1996-05-08</td><td>180 Lbs</td><td>6 ft4</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>894 167 $</td><td>894 167 $</td><td></td><td></td><td></td></tr>
+<tr><td>Mario Lucia</td><td>USA</td><td>LW</td><td>23</td><td>1993-08-25</td><td>187 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Maxim Mamin</td><td>RUS</td><td>C/LW/RW</td><td>22</td><td>1995-01-13</td><td>191 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>757 500 $</td><td>757 500 $</td><td></td><td></td><td></td></tr>
+<tr><td>Michael Dal Colle</td><td>CAN</td><td>LW</td><td>21</td><td>1996-06-20</td><td>204 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>3 063 333 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Oliver Kylington</td><td>SWE</td><td>D</td><td>20</td><td>1997-05-19</td><td>183 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>730 833 $</td><td>730 833 $</td><td>730 833 $</td><td></td><td></td></tr>
+<tr><td>Olli Maatta</td><td>FIN</td><td>D</td><td>22</td><td>1994-08-22</td><td>206 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>4 083 333 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Rasmus Andersson</td><td>SWE</td><td>D</td><td>20</td><td>1996-10-27</td><td>214 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>863 333 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Ryan Sproul</td><td>CAN</td><td>D</td><td>24</td><td>1993-01-13</td><td>205 Lbs</td><td>6 ft4</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>902 500 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Tanner Kero</td><td>USA</td><td>C/LW/RW</td><td>24</td><td>1992-07-24</td><td>185 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>750 000 $</td><td></td><td></td><td></td><td></td></tr>
+</table><br />
+<table class="basictablesorter"><tr>
+<td class="STHSW100">Total Players</td><td class="STHSW100">Average Age</td><td class="STHSW120">Average Weight</td><td class="STHSW120">Average Height</td><td class="STHSW120">Average Contract</td><td class="STHSW120">Average Salary</td><td class="STHSW140">Players who can play<br />both Pro and Farm </td><td class="STHSW140">Players who can play<br />Pro Only</td><td class="STHSW140">Players who can play<br />Farm Only</td></tr>
+<tr><td>22</td><td>22,8</td><td>195 Lbs</td><td>6 ft 1</td><td>1,50 years</td><td>1 163 409 $</td>
+<td>22</td><td>0</td><td>0</td></tr></table></div>
+<h1 class="TeamPlayerInfoFarm_Adi"><a id="Adirondack">Adirondack</a></h1>
+<div class="STHSTeamLink">
+[ <a href="LHHA0-FarmTeamRoster.html#Adirondack">Farm Team Roster</a> ]
+[ <a href="LHHA0-FarmTeamScoring.html#Adirondack">Farm Team Scoring</a> ]
+[ <a href="LHHA0-FarmTeamPlayersInfo.html#Adirondack">Farm Team PlayersInfo</a> ]
+[ <a href="LHHA0-FarmTeamLines.html#Adirondack">Farm Team Lines</a> ]
+[ <a href="LHHA0-FarmTeamSchedule.html#Adirondack">Farm Team Schedule</a> ]
+[ <a href="LHHA0-FarmTeamStats.html#Adirondack">Farm Team Stats</a> ]
+[ <a href="LHHA0-FarmTeamStatsVS.html#Adirondack">Farm Team StatsVS</a> ]
+[ <a href="LHHA0-ProTeamRoster.html#Flyers">Pro Team Roster</a> ]
+ [ <a href="#STHSRosterTop"><b>Page Top</b></a> ]
+[ <a href="javascript:STHS_JS_ToggleTeam('STHS_JS_Team_Adirondack');"><b>Close / Open Team View</b></a> ]
+</div><div id="STHS_JS_Team_Adirondack" style="display: block;">
+<table class="basictablesorter"><thead><tr>
+<th class="STHSW200">Player Name</th><th class="STHSW25">CNT</th><th class="STHSW65">PO</th><th class="STHSW25">Age</th><th class="STHSW65">Birthday</th><th class="STHSW65">Weight</th><th class="STHSW55">Height</th><th class="STHSW45">Health<br /># Loss</th><th class="STHSW45">Force<br />Waiver</th><th class="STHSW65">Contract</th><th class="STHSW100">Type</th><th class="STHSW75">One Way<br />Contract</th><th class="STHSW85">Salary #1</th><th class="STHSW85">Salary #2</th><th class="STHSW85">Salary #3</th><th class="STHSW85">Salary #4</th><th class="STHSW85">Salary #5</th></tr></thead>
+<tr><td>A.J. Greer</td><td>CAN</td><td>LW</td><td>20</td><td>1996-12-14</td><td>204 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>825 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Anthony Cirelli</td><td>CAN</td><td>C</td><td>20</td><td>1997-07-15</td><td>180 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td>925 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Anthony Stolarz</td><td>USA</td><td>G</td><td>23</td><td>1994-01-20</td><td>210 Lbs</td><td>6 ft6</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>725 000 $</td><td>725 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Charles Hudon</td><td>CAN</td><td>C/LW</td><td>23</td><td>1994-06-23</td><td>188 Lbs</td><td>5 ft10</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td>650 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Colby Robak</td><td>CAN</td><td>D</td><td>27</td><td>1990-04-24</td><td>194 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>675 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Connor Carrick</td><td>USA</td><td>D</td><td>23</td><td>1994-04-13</td><td>192 Lbs</td><td>5 ft10</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>750 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Devante Smith-Pelly</td><td>CAN</td><td>LW/RW</td><td>25</td><td>1992-06-14</td><td>223 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td>650 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Erik Cernak</td><td>SVK</td><td>D</td><td>20</td><td>1997-05-28</td><td>203 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>894 167 $</td><td>894 167 $</td><td></td><td></td><td></td></tr>
+<tr><td>Felix Girard</td><td>CAN</td><td>C</td><td>23</td><td>1994-05-09</td><td>196 Lbs</td><td>5 ft11</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td>650 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Gabriel Dumont</td><td>CAN</td><td>C/RW</td><td>26</td><td>1990-10-06</td><td>190 Lbs</td><td>5 ft10</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Jakub Zboril</td><td>CZE</td><td>D</td><td>20</td><td>1997-02-21</td><td>200 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>1 288 333 $</td><td>1 288 333 $</td><td></td><td></td><td></td></tr>
+<tr><td>John Quenneville</td><td>CAN</td><td>C</td><td>21</td><td>1996-04-16</td><td>195 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>894 167 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Josh Wesley</td><td>USA</td><td>D</td><td>21</td><td>1996-04-09</td><td>195 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>695 000 $</td><td>695 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Lias Andersson</td><td>SWE</td><td>C</td><td>18</td><td>1998-10-13</td><td>204 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>1 775 000 $</td><td>1 775 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Matt Read</td><td>CAN</td><td>C/LW/RW</td><td>31</td><td>1986-06-14</td><td>185 Lbs</td><td>5 ft10</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td>650 000 $</td><td>650 000 $</td><td></td><td></td></tr>
+<tr><td>Matthew Spencer</td><td>CAN</td><td>D</td><td>20</td><td>1997-03-24</td><td>206 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td>925 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Nail Yakupov</td><td>RUS</td><td>LW/RW</td><td>23</td><td>1993-10-06</td><td>195 Lbs</td><td>5 ft11</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>875 000 $</td><td>875 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Peter Budaj</td><td>SVK</td><td>G</td><td>34</td><td>1982-09-18</td><td>196 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>1 025 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Pontus Aberg</td><td>SWE</td><td>LW/RW</td><td>23</td><td>1993-09-23</td><td>196 Lbs</td><td>5 ft11</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td>650 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Shawn Matthias</td><td>CAN</td><td>C/LW</td><td>29</td><td>1988-02-19</td><td>231 Lbs</td><td>6 ft4</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>2 125 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Valentin Zykov</td><td>RUS</td><td>RW</td><td>22</td><td>1995-05-15</td><td>224 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>675 000 $</td><td>675 000 $</td><td>675 000 $</td><td></td><td></td></tr>
+<tr><td>Zach Sanford</td><td>USA</td><td>C/LW</td><td>22</td><td>1994-11-09</td><td>207 Lbs</td><td>6 ft4</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td></td><td></td><td></td><td></td></tr>
+</table><br />
+<table class="basictablesorter"><tr>
+<td class="STHSW100">Total Players</td><td class="STHSW100">Average Age</td><td class="STHSW120">Average Weight</td><td class="STHSW120">Average Height</td><td class="STHSW120">Average Contract</td><td class="STHSW120">Average Salary</td><td class="STHSW140">Players who can play<br />both Pro and Farm </td><td class="STHSW140">Players who can play<br />Pro Only</td><td class="STHSW140">Players who can play<br />Farm Only</td></tr>
+<tr><td>22</td><td>23,4</td><td>201 Lbs</td><td>6 ft 1</td><td>1,73 years</td><td>904 394 $</td>
+<td>22</td><td>0</td><td>0</td></tr></table></div>
+<h1 class="TeamPlayerInfoFarm_Bri"><a id="Bridgeport">Bridgeport</a></h1>
+<div class="STHSTeamLink">
+[ <a href="LHHA0-FarmTeamRoster.html#Bridgeport">Farm Team Roster</a> ]
+[ <a href="LHHA0-FarmTeamScoring.html#Bridgeport">Farm Team Scoring</a> ]
+[ <a href="LHHA0-FarmTeamPlayersInfo.html#Bridgeport">Farm Team PlayersInfo</a> ]
+[ <a href="LHHA0-FarmTeamLines.html#Bridgeport">Farm Team Lines</a> ]
+[ <a href="LHHA0-FarmTeamSchedule.html#Bridgeport">Farm Team Schedule</a> ]
+[ <a href="LHHA0-FarmTeamStats.html#Bridgeport">Farm Team Stats</a> ]
+[ <a href="LHHA0-FarmTeamStatsVS.html#Bridgeport">Farm Team StatsVS</a> ]
+[ <a href="LHHA0-ProTeamRoster.html#Islanders">Pro Team Roster</a> ]
+ [ <a href="#STHSRosterTop"><b>Page Top</b></a> ]
+[ <a href="javascript:STHS_JS_ToggleTeam('STHS_JS_Team_Bridgeport');"><b>Close / Open Team View</b></a> ]
+</div><div id="STHS_JS_Team_Bridgeport" style="display: block;">
+<table class="basictablesorter"><thead><tr>
+<th class="STHSW200">Player Name</th><th class="STHSW25">CNT</th><th class="STHSW65">PO</th><th class="STHSW25">Age</th><th class="STHSW65">Birthday</th><th class="STHSW65">Weight</th><th class="STHSW55">Height</th><th class="STHSW45">Health<br /># Loss</th><th class="STHSW45">Force<br />Waiver</th><th class="STHSW65">Contract</th><th class="STHSW100">Type</th><th class="STHSW75">One Way<br />Contract</th><th class="STHSW85">Salary #1</th><th class="STHSW85">Salary #2</th><th class="STHSW85">Salary #3</th><th class="STHSW85">Salary #4</th><th class="STHSW85">Salary #5</th></tr></thead>
+<tr><td>Alan Quine</td><td>CAN</td><td>C/LW/RW</td><td>24</td><td>1993-02-25</td><td>203 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>700 000 $</td><td>700 000 $</td><td>700 000 $</td><td></td><td></td></tr>
+<tr><td>Alex Stalock</td><td>USA</td><td>G</td><td>29</td><td>1987-07-28</td><td>191 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Alexander Nylander</td><td>SWE</td><td>LW/RW</td><td>19</td><td>1998-03-02</td><td>192 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>1 744 166 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Anton Forsberg</td><td>SWE</td><td>G</td><td>24</td><td>1992-11-27</td><td>192 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>750 000 $</td><td>750 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Austin Czarnik</td><td>USA</td><td>C/RW</td><td>24</td><td>1992-12-12</td><td>160 Lbs</td><td>5 ft9</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>675 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Ben Smith</td><td>USA</td><td>C/LW/RW</td><td>29</td><td>1988-07-11</td><td>203 Lbs</td><td>5 ft11</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Brandon Davidson</td><td>CAN</td><td>D</td><td>25</td><td>1991-08-21</td><td>208 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td>650 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Brandon Manning</td><td>CAN</td><td>D</td><td>27</td><td>1990-06-04</td><td>205 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>2 250 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Brendan Smith</td><td>CAN</td><td>D</td><td>28</td><td>1989-02-08</td><td>211 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>4 350 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Brenden Dillon</td><td>CAN</td><td>D</td><td>26</td><td>1990-11-13</td><td>225 Lbs</td><td>6 ft4</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>3 270 000 $</td><td>3 270 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Brett Ritchie</td><td>CAN</td><td>LW/RW</td><td>24</td><td>1993-07-01</td><td>217 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>875 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>C.J. Smith</td><td>USA</td><td>LW</td><td>22</td><td>1994-12-01</td><td>181 Lbs</td><td>5 ft11</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>874 125 $</td><td>874 125 $</td><td></td><td></td><td></td></tr>
+<tr><td>Calvin Pickard</td><td>CAN</td><td>G</td><td>25</td><td>1992-04-15</td><td>200 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>1 000 000 $</td><td>1 000 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Devon Toews</td><td>CAN</td><td>D</td><td>23</td><td>1994-02-21</td><td>181 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>700 000 $</td><td>700 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Dmytro Timashov</td><td>SWE</td><td>LW/RW</td><td>20</td><td>1996-10-01</td><td>195 Lbs</td><td>5 ft1</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>835 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Jared Coreau</td><td>CAN</td><td>G</td><td>25</td><td>1991-11-05</td><td>220 Lbs</td><td>6 ft6</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>612 500 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Jay Beagle</td><td>CAN</td><td>C/RW</td><td>31</td><td>1985-10-16</td><td>218 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>1 750 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Jonny Brodzinski</td><td>USA</td><td>C/RW</td><td>24</td><td>1993-06-19</td><td>217 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td>650 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Jordan Weal</td><td>CAN</td><td>C/RW</td><td>25</td><td>1992-04-15</td><td>179 Lbs</td><td>5 ft10</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>1 750 000 $</td><td>1 750 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Kalle Kossila</td><td>FIN</td><td>LW</td><td>24</td><td>1993-04-14</td><td>185 Lbs</td><td>5 ft10</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Kris Versteeg</td><td>CAN</td><td>LW/RW</td><td>31</td><td>1986-05-13</td><td>176 Lbs</td><td>5 ft11</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>1 750 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Luc Snuggerud</td><td>USA</td><td>D</td><td>21</td><td>1995-09-18</td><td>184 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td>925 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Nick Jensen</td><td>USA</td><td>D</td><td>26</td><td>1990-09-21</td><td>194 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>812 500 $</td><td>812 500 $</td><td>812 500 $</td><td></td><td></td></tr>
+<tr><td>Reid Boucher</td><td>USA</td><td>LW/RW</td><td>23</td><td>1993-09-08</td><td>195 Lbs</td><td>5 ft10</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>725 000 $</td><td>725 000 $</td><td>725 000 $</td><td></td><td></td></tr>
+<tr><td>Roland McKeown</td><td>CAN</td><td>D</td><td>21</td><td>1996-01-20</td><td>195 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>894 167 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Seth Helgeson</td><td>USA</td><td>D</td><td>26</td><td>1990-10-08</td><td>221 Lbs</td><td>6 ft4</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>675 000 $</td><td>675 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Travis Boyd</td><td>USA</td><td>C/RW</td><td>23</td><td>1993-09-14</td><td>185 Lbs</td><td>5 ft11</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td></td><td></td><td></td><td></td></tr>
+</table><br />
+<table class="basictablesorter"><tr>
+<td class="STHSW100">Total Players</td><td class="STHSW100">Average Age</td><td class="STHSW120">Average Weight</td><td class="STHSW120">Average Height</td><td class="STHSW120">Average Contract</td><td class="STHSW120">Average Salary</td><td class="STHSW140">Players who can play<br />both Pro and Farm </td><td class="STHSW140">Players who can play<br />Pro Only</td><td class="STHSW140">Players who can play<br />Farm Only</td></tr>
+<tr><td>27</td><td>24,8</td><td>198 Lbs</td><td>6 ft 0</td><td>1,59 years</td><td>1 188 610 $</td>
+<td>27</td><td>0</td><td>0</td></tr></table></div>
+<h1 class="TeamPlayerInfoFarm_Min"><a id="St.Johns">St.Johns</a></h1>
+<div class="STHSTeamLink">
+[ <a href="LHHA0-FarmTeamRoster.html#St.Johns">Farm Team Roster</a> ]
+[ <a href="LHHA0-FarmTeamScoring.html#St.Johns">Farm Team Scoring</a> ]
+[ <a href="LHHA0-FarmTeamPlayersInfo.html#St.Johns">Farm Team PlayersInfo</a> ]
+[ <a href="LHHA0-FarmTeamLines.html#St.Johns">Farm Team Lines</a> ]
+[ <a href="LHHA0-FarmTeamSchedule.html#St.Johns">Farm Team Schedule</a> ]
+[ <a href="LHHA0-FarmTeamStats.html#St.Johns">Farm Team Stats</a> ]
+[ <a href="LHHA0-FarmTeamStatsVS.html#St.Johns">Farm Team StatsVS</a> ]
+[ <a href="LHHA0-ProTeamRoster.html#Jets">Pro Team Roster</a> ]
+ [ <a href="#STHSRosterTop"><b>Page Top</b></a> ]
+[ <a href="javascript:STHS_JS_ToggleTeam('STHS_JS_Team_St.Johns');"><b>Close / Open Team View</b></a> ]
+</div><div id="STHS_JS_Team_St.Johns" style="display: block;">
+<table class="basictablesorter"><thead><tr>
+<th class="STHSW200">Player Name</th><th class="STHSW25">CNT</th><th class="STHSW65">PO</th><th class="STHSW25">Age</th><th class="STHSW65">Birthday</th><th class="STHSW65">Weight</th><th class="STHSW55">Height</th><th class="STHSW45">Health<br /># Loss</th><th class="STHSW45">Force<br />Waiver</th><th class="STHSW65">Contract</th><th class="STHSW100">Type</th><th class="STHSW75">One Way<br />Contract</th><th class="STHSW85">Salary #1</th><th class="STHSW85">Salary #2</th><th class="STHSW85">Salary #3</th><th class="STHSW85">Salary #4</th><th class="STHSW85">Salary #5</th></tr></thead>
+<tr><td>Brady Skjei</td><td>USA</td><td>D</td><td>23</td><td>1994-03-26</td><td>211 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>5 250 000 $</td><td>5 250 000 $</td><td>5 250 000 $</td><td></td><td></td></tr>
+<tr><td>Brian Flynn</td><td>USA</td><td>C/LW/RW</td><td>28</td><td>1988-07-26</td><td>183 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>700 000 $</td><td>700 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Connor Murphy</td><td>USA</td><td>D</td><td>24</td><td>1993-03-26</td><td>212 Lbs</td><td>6 ft4</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>3 850 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Daniel Brickley</td><td>USA</td><td>D</td><td>22</td><td>1995-03-30</td><td>203 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td>925 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Dylan Sadowy</td><td>CAN</td><td>RW</td><td>21</td><td>1996-04-02</td><td>180 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Frank Vatrano</td><td>USA</td><td>C/LW/RW</td><td>23</td><td>1994-03-14</td><td>201 Lbs</td><td>5 ft9</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td>925 000 $</td><td>925 000 $</td><td></td><td></td></tr>
+<tr><td>Greg Pateryn</td><td>USA</td><td>D</td><td>27</td><td>1990-06-20</td><td>224 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>800 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Jared Boll</td><td>USA</td><td>RW</td><td>31</td><td>1986-05-13</td><td>206 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>900 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Jeremy Lauzon</td><td>CAN</td><td>D</td><td>20</td><td>1997-04-28</td><td>204 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>863 333 $</td><td>863 333 $</td><td></td><td></td><td></td></tr>
+<tr><td>Jimmy Hayes</td><td>USA</td><td>RW</td><td>27</td><td>1989-11-21</td><td>215 Lbs</td><td>6 ft5</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td>650 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Madison Bowey</td><td>CAN</td><td>D</td><td>22</td><td>1995-04-22</td><td>198 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>1 000 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Mathieu Joseph</td><td>CAN</td><td>RW</td><td>20</td><td>1997-02-09</td><td>173 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td>925 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Michael Amadio</td><td>CAN</td><td>C</td><td>21</td><td>1996-05-13</td><td>204 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td>925 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Rinat Valiev</td><td>RUS</td><td>D</td><td>22</td><td>1995-05-11</td><td>215 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td>650 000 $</td><td>650 000 $</td><td></td><td></td></tr>
+<tr><td>Roope Hintz</td><td>FIN</td><td>LW</td><td>20</td><td>1996-11-17</td><td>205 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td>925 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Ryan Carpenter</td><td>USA</td><td>C/RW</td><td>26</td><td>1991-01-18</td><td>200 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td>650 000 $</td><td>650 000 $</td><td></td><td></td></tr>
+<tr><td>Ryan Strome</td><td>CAN</td><td>C/LW/RW</td><td>24</td><td>1993-07-11</td><td>194 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>2 500 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Spencer Abbott</td><td>CAN</td><td>LW</td><td>29</td><td>1988-04-30</td><td>170 Lbs</td><td>5 ft9</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>575 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Spencer Foo</td><td>CAN</td><td>RW</td><td>23</td><td>1994-05-19</td><td>190 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>1 775 000 $</td><td>1 775 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Teemu Pulkkinen</td><td>FIN</td><td>LW/RW</td><td>25</td><td>1992-01-02</td><td>185 Lbs</td><td>5 ft10</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>812 500 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Thomas Hickey</td><td>CAN</td><td>D</td><td>28</td><td>1989-02-08</td><td>188 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>2 200 000 $</td><td>2 200 000 $</td><td></td><td></td><td></td></tr>
+</table><br />
+<table class="basictablesorter"><tr>
+<td class="STHSW100">Total Players</td><td class="STHSW100">Average Age</td><td class="STHSW120">Average Weight</td><td class="STHSW120">Average Height</td><td class="STHSW120">Average Contract</td><td class="STHSW120">Average Salary</td><td class="STHSW140">Players who can play<br />both Pro and Farm </td><td class="STHSW140">Players who can play<br />Pro Only</td><td class="STHSW140">Players who can play<br />Farm Only</td></tr>
+<tr><td>21</td><td>24,1</td><td>198 Lbs</td><td>6 ft 1</td><td>1,81 years</td><td>1 367 897 $</td>
+<td>21</td><td>0</td><td>0</td></tr></table></div>
+<h1 class="TeamPlayerInfoFarm_Man"><a id="Manchester">Manchester</a></h1>
+<div class="STHSTeamLink">
+[ <a href="LHHA0-FarmTeamRoster.html#Manchester">Farm Team Roster</a> ]
+[ <a href="LHHA0-FarmTeamScoring.html#Manchester">Farm Team Scoring</a> ]
+[ <a href="LHHA0-FarmTeamPlayersInfo.html#Manchester">Farm Team PlayersInfo</a> ]
+[ <a href="LHHA0-FarmTeamLines.html#Manchester">Farm Team Lines</a> ]
+[ <a href="LHHA0-FarmTeamSchedule.html#Manchester">Farm Team Schedule</a> ]
+[ <a href="LHHA0-FarmTeamStats.html#Manchester">Farm Team Stats</a> ]
+[ <a href="LHHA0-FarmTeamStatsVS.html#Manchester">Farm Team StatsVS</a> ]
+[ <a href="LHHA0-ProTeamRoster.html#Kings">Pro Team Roster</a> ]
+ [ <a href="#STHSRosterTop"><b>Page Top</b></a> ]
+[ <a href="javascript:STHS_JS_ToggleTeam('STHS_JS_Team_Manchester');"><b>Close / Open Team View</b></a> ]
+</div><div id="STHS_JS_Team_Manchester" style="display: block;">
+<table class="basictablesorter"><thead><tr>
+<th class="STHSW200">Player Name</th><th class="STHSW25">CNT</th><th class="STHSW65">PO</th><th class="STHSW25">Age</th><th class="STHSW65">Birthday</th><th class="STHSW65">Weight</th><th class="STHSW55">Height</th><th class="STHSW45">Health<br /># Loss</th><th class="STHSW45">Force<br />Waiver</th><th class="STHSW65">Contract</th><th class="STHSW100">Type</th><th class="STHSW75">One Way<br />Contract</th><th class="STHSW85">Salary #1</th><th class="STHSW85">Salary #2</th><th class="STHSW85">Salary #3</th><th class="STHSW85">Salary #4</th><th class="STHSW85">Salary #5</th></tr></thead>
+<tr><td>Anthony Peluso</td><td>CAN</td><td>RW</td><td>28</td><td>1989-04-18</td><td>225 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>675 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Carl Dahlstrom</td><td>SWE</td><td>D</td><td>22</td><td>1995-01-28</td><td>231 Lbs</td><td>6 ft4</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Jason Chimera</td><td>CAN</td><td>LW/RW</td><td>38</td><td>1979-05-02</td><td>215 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>2 250 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Jayson Megna</td><td>USA</td><td>C</td><td>27</td><td>1990-02-01</td><td>195 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>600 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>John Hayden</td><td>USA</td><td>C/LW/RW</td><td>22</td><td>1995-02-14</td><td>223 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Korbinian Holzer</td><td>DEU</td><td>D</td><td>29</td><td>1988-02-16</td><td>214 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>900 000 $</td><td>900 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Kyle Clifford</td><td>CAN</td><td>LW/RW</td><td>26</td><td>1991-01-13</td><td>211 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>1 600 000 $</td><td>1 600 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Luke Witkowski</td><td>USA</td><td>D</td><td>27</td><td>1990-04-14</td><td>210 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>575 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Robert Bortuzzo</td><td>CAN</td><td>D</td><td>28</td><td>1989-03-18</td><td>216 Lbs</td><td>6 ft4</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>1 050 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Viktor Svedberg</td><td>SWE</td><td>D</td><td>26</td><td>1991-05-24</td><td>238 Lbs</td><td>6 ft8</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>750 000 $</td><td></td><td></td><td></td><td></td></tr>
+</table><br />
+<table class="basictablesorter"><tr>
+<td class="STHSW100">Total Players</td><td class="STHSW100">Average Age</td><td class="STHSW120">Average Weight</td><td class="STHSW120">Average Height</td><td class="STHSW120">Average Contract</td><td class="STHSW120">Average Salary</td><td class="STHSW140">Players who can play<br />both Pro and Farm </td><td class="STHSW140">Players who can play<br />Pro Only</td><td class="STHSW140">Players who can play<br />Farm Only</td></tr>
+<tr><td>10</td><td>27,3</td><td>218 Lbs</td><td>6 ft 3</td><td>1,20 years</td><td>1 025 000 $</td>
+<td>10</td><td>0</td><td>0</td></tr></table></div>
+<h1 class="TeamPlayerInfoFarm_Nor"><a id="Norfolk">Norfolk</a></h1>
+<div class="STHSTeamLink">
+[ <a href="LHHA0-FarmTeamRoster.html#Norfolk">Farm Team Roster</a> ]
+[ <a href="LHHA0-FarmTeamScoring.html#Norfolk">Farm Team Scoring</a> ]
+[ <a href="LHHA0-FarmTeamPlayersInfo.html#Norfolk">Farm Team PlayersInfo</a> ]
+[ <a href="LHHA0-FarmTeamLines.html#Norfolk">Farm Team Lines</a> ]
+[ <a href="LHHA0-FarmTeamSchedule.html#Norfolk">Farm Team Schedule</a> ]
+[ <a href="LHHA0-FarmTeamStats.html#Norfolk">Farm Team Stats</a> ]
+[ <a href="LHHA0-FarmTeamStatsVS.html#Norfolk">Farm Team StatsVS</a> ]
+[ <a href="LHHA0-ProTeamRoster.html#Lightning">Pro Team Roster</a> ]
+ [ <a href="#STHSRosterTop"><b>Page Top</b></a> ]
+[ <a href="javascript:STHS_JS_ToggleTeam('STHS_JS_Team_Norfolk');"><b>Close / Open Team View</b></a> ]
+</div><div id="STHS_JS_Team_Norfolk" style="display: block;">
+<table class="basictablesorter"><thead><tr>
+<th class="STHSW200">Player Name</th><th class="STHSW25">CNT</th><th class="STHSW65">PO</th><th class="STHSW25">Age</th><th class="STHSW65">Birthday</th><th class="STHSW65">Weight</th><th class="STHSW55">Height</th><th class="STHSW45">Health<br /># Loss</th><th class="STHSW45">Force<br />Waiver</th><th class="STHSW65">Contract</th><th class="STHSW100">Type</th><th class="STHSW75">One Way<br />Contract</th><th class="STHSW85">Salary #1</th><th class="STHSW85">Salary #2</th><th class="STHSW85">Salary #3</th><th class="STHSW85">Salary #4</th><th class="STHSW85">Salary #5</th></tr></thead>
+<tr><td>Aleksi Saarela</td><td>FIN</td><td>C</td><td>20</td><td>1997-01-07</td><td>198 Lbs</td><td>5 ft1</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>894 167 $</td><td>894 167 $</td><td></td><td></td><td></td></tr>
+<tr><td>Brendan Gaunce</td><td>CAN</td><td>C/LW</td><td>23</td><td>1994-03-25</td><td>217 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>750 000 $</td><td>750 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Caleb Jones</td><td>USA</td><td>D</td><td>20</td><td>1997-06-06</td><td>192 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>790 000 $</td><td>790 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Cole Ully</td><td>CAN</td><td>LW</td><td>22</td><td>1995-02-20</td><td>170 Lbs</td><td>5 ft11</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>646 667 $</td><td>646 667 $</td><td>646 667 $</td><td></td><td></td></tr>
+<tr><td>Connor Hobbs</td><td>CAN</td><td>D</td><td>20</td><td>1997-01-04</td><td>197 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>791 667 $</td><td>791 667 $</td><td></td><td></td><td></td></tr>
+<tr><td>Conor Garland</td><td>USA</td><td>RW</td><td>21</td><td>1996-03-11</td><td>165 Lbs</td><td>5 ft1</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>821 667 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Devin Shore</td><td>CAN</td><td>C/LW/RW</td><td>22</td><td>1994-07-19</td><td>205 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td>925 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Drew Stafford</td><td>USA</td><td>LW/RW</td><td>31</td><td>1985-10-30</td><td>215 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>800 000 $</td><td>800 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Dylan Gambrell</td><td>USA</td><td>C</td><td>20</td><td>1996-08-26</td><td>195 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td>925 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Eeli Tolvanen</td><td>FIN</td><td>RW</td><td>18</td><td>1999-04-22</td><td>191 Lbs</td><td>5 ft10</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>3 145 833 $</td><td>3 145 833 $</td><td></td><td></td><td></td></tr>
+<tr><td>Frederick Gaudreau</td><td>CAN</td><td>C/LW/RW</td><td>24</td><td>1993-05-01</td><td>179 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>666 667 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Griffin Reinhart</td><td>CAN</td><td>D</td><td>23</td><td>1994-01-24</td><td>212 Lbs</td><td>6 ft4</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>800 000 $</td><td>800 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>J.T. Compher</td><td>USA</td><td>C/LW/RW</td><td>22</td><td>1995-04-08</td><td>193 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>1 000 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Jakob Chychrun</td><td>USA</td><td>D</td><td>19</td><td>1998-03-31</td><td>210 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>1 350 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Jason Dickinson</td><td>CAN</td><td>C</td><td>22</td><td>1995-07-04</td><td>205 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>875 000 $</td><td>875 000 $</td><td>875 000 $</td><td></td><td></td></tr>
+<tr><td>Joe Morrow</td><td>CAN</td><td>D</td><td>24</td><td>1992-12-09</td><td>196 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>800 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Jonas Siegenthaler</td><td>CHE</td><td>D</td><td>20</td><td>1997-05-06</td><td>220 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>863 333 $</td><td>863 333 $</td><td></td><td></td><td></td></tr>
+<tr><td>Jori Lehtera</td><td>FIN</td><td>C</td><td>29</td><td>1987-12-23</td><td>212 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>4 700 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Kasperi Kapanen</td><td>FIN</td><td>LW/RW</td><td>20</td><td>1996-07-23</td><td>187 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>863 333 $</td><td>863 333 $</td><td>863 333 $</td><td></td><td></td></tr>
+<tr><td>Kevin Roy</td><td>CAN</td><td>LW</td><td>24</td><td>1993-05-20</td><td>170 Lbs</td><td>5 ft9</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Mark Barberio</td><td>CAN</td><td>D</td><td>27</td><td>1990-03-23</td><td>207 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>Yes</td><td>1 450 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Patrick Maroon</td><td>USA</td><td>LW/RW</td><td>29</td><td>1988-04-23</td><td>225 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>2 000 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Ryan Murphy</td><td>CAN</td><td>D</td><td>24</td><td>1993-03-31</td><td>185 Lbs</td><td>5 ft11</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td>650 000 $</td><td>650 000 $</td><td></td><td></td></tr>
+<tr><td>Sven Baertschi</td><td>CHE</td><td>LW/RW</td><td>24</td><td>1992-10-05</td><td>192 Lbs</td><td>5 ft11</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>1 850 000 $</td><td>1 850 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Tristan Jarry</td><td>CAN</td><td>G</td><td>22</td><td>1995-04-29</td><td>194 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>675 000 $</td><td>675 000 $</td><td>675 000 $</td><td></td><td></td></tr>
+<tr><td>William Carrier</td><td>CAN</td><td>LW/RW</td><td>22</td><td>1994-12-20</td><td>212 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>856 667 $</td><td>856 667 $</td><td></td><td></td><td></td></tr>
+</table><br />
+<table class="basictablesorter"><tr>
+<td class="STHSW100">Total Players</td><td class="STHSW100">Average Age</td><td class="STHSW120">Average Weight</td><td class="STHSW120">Average Height</td><td class="STHSW120">Average Contract</td><td class="STHSW120">Average Salary</td><td class="STHSW140">Players who can play<br />both Pro and Farm </td><td class="STHSW140">Players who can play<br />Pro Only</td><td class="STHSW140">Players who can play<br />Farm Only</td></tr>
+<tr><td>26</td><td>22,8</td><td>198 Lbs</td><td>6 ft 0</td><td>1,85 years</td><td>1 185 192 $</td>
+<td>26</td><td>0</td><td>0</td></tr></table></div>
+<h1 class="TeamPlayerInfoFarm_Mar"><a id="Marlies">Marlies</a></h1>
+<div class="STHSTeamLink">
+[ <a href="LHHA0-FarmTeamRoster.html#Marlies">Farm Team Roster</a> ]
+[ <a href="LHHA0-FarmTeamScoring.html#Marlies">Farm Team Scoring</a> ]
+[ <a href="LHHA0-FarmTeamPlayersInfo.html#Marlies">Farm Team PlayersInfo</a> ]
+[ <a href="LHHA0-FarmTeamLines.html#Marlies">Farm Team Lines</a> ]
+[ <a href="LHHA0-FarmTeamSchedule.html#Marlies">Farm Team Schedule</a> ]
+[ <a href="LHHA0-FarmTeamStats.html#Marlies">Farm Team Stats</a> ]
+[ <a href="LHHA0-FarmTeamStatsVS.html#Marlies">Farm Team StatsVS</a> ]
+[ <a href="LHHA0-ProTeamRoster.html#MapleLeafs">Pro Team Roster</a> ]
+ [ <a href="#STHSRosterTop"><b>Page Top</b></a> ]
+[ <a href="javascript:STHS_JS_ToggleTeam('STHS_JS_Team_Marlies');"><b>Close / Open Team View</b></a> ]
+</div><div id="STHS_JS_Team_Marlies" style="display: block;">
+<table class="basictablesorter"><thead><tr>
+<th class="STHSW200">Player Name</th><th class="STHSW25">CNT</th><th class="STHSW65">PO</th><th class="STHSW25">Age</th><th class="STHSW65">Birthday</th><th class="STHSW65">Weight</th><th class="STHSW55">Height</th><th class="STHSW45">Health<br /># Loss</th><th class="STHSW45">Force<br />Waiver</th><th class="STHSW65">Contract</th><th class="STHSW100">Type</th><th class="STHSW75">One Way<br />Contract</th><th class="STHSW85">Salary #1</th><th class="STHSW85">Salary #2</th><th class="STHSW85">Salary #3</th><th class="STHSW85">Salary #4</th><th class="STHSW85">Salary #5</th></tr></thead>
+<tr><td>Andrew Nielsen</td><td>CAN</td><td>D</td><td>20</td><td>1996-11-13</td><td>210 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>921 667 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Brandon Pirri</td><td>CAN</td><td>C/LW/RW</td><td>26</td><td>1991-04-10</td><td>186 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>1 100 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Christian Folin</td><td>SWE</td><td>D</td><td>26</td><td>1991-02-09</td><td>204 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>725 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Cole Schneider</td><td>USA</td><td>C/LW/RW</td><td>26</td><td>1990-08-26</td><td>203 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>600 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Erik Gudbranson</td><td>CAN</td><td>D</td><td>25</td><td>1992-01-07</td><td>220 Lbs</td><td>6 ft5</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>4 000 000 $</td><td>4 000 000 $</td><td>4 000 000 $</td><td></td><td></td></tr>
+<tr><td>Joonas Donskoi</td><td>FIN</td><td>LW/RW</td><td>25</td><td>1992-04-13</td><td>190 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>1 900 000 $</td><td>1 900 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Julius Nattinen</td><td>FIN</td><td>C</td><td>20</td><td>1997-01-14</td><td>206 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>863 333 $</td><td>863 333 $</td><td></td><td></td><td></td></tr>
+<tr><td>Louis Domingue</td><td>CAN</td><td>G</td><td>25</td><td>1992-03-06</td><td>210 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>1 150 000 $</td><td>1 150 000 $</td><td>1 150 000 $</td><td></td><td></td></tr>
+<tr><td>Mackenzie Blackwood</td><td>CAN</td><td>G</td><td>20</td><td>1996-12-09</td><td>225 Lbs</td><td>6 ft4</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>913 333 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Mark Fayne</td><td>USA</td><td>D</td><td>30</td><td>1987-05-15</td><td>209 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>3 625 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Mitch Reinke</td><td>USA</td><td>D</td><td>21</td><td>1996-02-04</td><td>181 Lbs</td><td>5 ft11</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td>925 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Morgan Klimchuk</td><td>CAN</td><td>LW</td><td>22</td><td>1995-03-02</td><td>185 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>700 000 $</td><td>700 000 $</td><td>700 000 $</td><td></td><td></td></tr>
+<tr><td>Nate Thompson</td><td>USA</td><td>C/LW</td><td>32</td><td>1984-10-05</td><td>214 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>1 650 000 $</td><td>1 650 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Nic Dowd</td><td>USA</td><td>C</td><td>27</td><td>1990-05-27</td><td>197 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td>650 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Nicholas Baptiste</td><td>CAN</td><td>C/RW</td><td>21</td><td>1995-08-04</td><td>205 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>787 500 $</td><td>787 500 $</td><td>787 500 $</td><td></td><td></td></tr>
+<tr><td>Remi Elie</td><td>CAN</td><td>LW</td><td>22</td><td>1995-04-16</td><td>210 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>735 000 $</td><td>735 000 $</td><td>735 000 $</td><td></td><td></td></tr>
+<tr><td>Ryan Gropp</td><td>CAN</td><td>LW</td><td>20</td><td>1996-09-16</td><td>195 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>894 167 $</td><td>894 167 $</td><td></td><td></td><td></td></tr>
+<tr><td>Slater Koekkoek</td><td>CAN</td><td>D</td><td>23</td><td>1994-02-18</td><td>193 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>800 000 $</td><td>800 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Tony DeAngelo</td><td>USA</td><td>D</td><td>21</td><td>1995-10-24</td><td>181 Lbs</td><td>5 ft11</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>1 263 333 $</td><td>1 263 333 $</td><td>1 263 333 $</td><td></td><td></td></tr>
+<tr><td>Victor Ejdsell</td><td>SWE</td><td>C</td><td>22</td><td>1995-06-06</td><td>214 Lbs</td><td>6 ft5</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td>925 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Warren Foegele</td><td>CAN</td><td>LW</td><td>21</td><td>1996-04-01</td><td>190 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>800 000 $</td><td>800 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Zach Aston-Reese</td><td>USA</td><td>C/RW</td><td>22</td><td>1994-08-10</td><td>204 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Zach Bogosian</td><td>USA</td><td>D</td><td>27</td><td>1990-07-15</td><td>221 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>5 142 857 $</td><td>5 142 857 $</td><td>5 142 857 $</td><td></td><td></td></tr>
+</table><br />
+<table class="basictablesorter"><tr>
+<td class="STHSW100">Total Players</td><td class="STHSW100">Average Age</td><td class="STHSW120">Average Weight</td><td class="STHSW120">Average Height</td><td class="STHSW120">Average Contract</td><td class="STHSW120">Average Salary</td><td class="STHSW140">Players who can play<br />both Pro and Farm </td><td class="STHSW140">Players who can play<br />Pro Only</td><td class="STHSW140">Players who can play<br />Farm Only</td></tr>
+<tr><td>23</td><td>23,7</td><td>202 Lbs</td><td>6 ft 2</td><td>2,00 years</td><td>1 391 139 $</td>
+<td>23</td><td>0</td><td>0</td></tr></table></div>
+<h1 class="TeamPlayerInfoFarm_Cor"><a id="Cornwall">Cornwall</a></h1>
+<div class="STHSTeamLink">
+[ <a href="LHHA0-FarmTeamRoster.html#Cornwall">Farm Team Roster</a> ]
+[ <a href="LHHA0-FarmTeamScoring.html#Cornwall">Farm Team Scoring</a> ]
+[ <a href="LHHA0-FarmTeamPlayersInfo.html#Cornwall">Farm Team PlayersInfo</a> ]
+[ <a href="LHHA0-FarmTeamLines.html#Cornwall">Farm Team Lines</a> ]
+[ <a href="LHHA0-FarmTeamSchedule.html#Cornwall">Farm Team Schedule</a> ]
+[ <a href="LHHA0-FarmTeamStats.html#Cornwall">Farm Team Stats</a> ]
+[ <a href="LHHA0-FarmTeamStatsVS.html#Cornwall">Farm Team StatsVS</a> ]
+[ <a href="LHHA0-ProTeamRoster.html#Nordiques">Pro Team Roster</a> ]
+ [ <a href="#STHSRosterTop"><b>Page Top</b></a> ]
+[ <a href="javascript:STHS_JS_ToggleTeam('STHS_JS_Team_Cornwall');"><b>Close / Open Team View</b></a> ]
+</div><div id="STHS_JS_Team_Cornwall" style="display: block;">
+<table class="basictablesorter"><thead><tr>
+<th class="STHSW200">Player Name</th><th class="STHSW25">CNT</th><th class="STHSW65">PO</th><th class="STHSW25">Age</th><th class="STHSW65">Birthday</th><th class="STHSW65">Weight</th><th class="STHSW55">Height</th><th class="STHSW45">Health<br /># Loss</th><th class="STHSW45">Force<br />Waiver</th><th class="STHSW65">Contract</th><th class="STHSW100">Type</th><th class="STHSW75">One Way<br />Contract</th><th class="STHSW85">Salary #1</th><th class="STHSW85">Salary #2</th><th class="STHSW85">Salary #3</th><th class="STHSW85">Salary #4</th><th class="STHSW85">Salary #5</th></tr></thead>
+<tr><td>Aaron Dell</td><td>CAN</td><td>G</td><td>28</td><td>1989-05-04</td><td>200 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>1 900 000 $</td><td>1 900 000 $</td><td>1 900 000 $</td><td></td><td></td></tr>
+<tr><td>Brad Hunt</td><td>CAN</td><td>D</td><td>28</td><td>1988-08-24</td><td>187 Lbs</td><td>5 ft9</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td>650 000 $</td><td>650 000 $</td><td></td><td></td></tr>
+<tr><td>Brian Gionta</td><td>USA</td><td>RW</td><td>38</td><td>1979-01-18</td><td>178 Lbs</td><td>5 ft7</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>700 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Chris Stewart</td><td>CAN</td><td>RW</td><td>29</td><td>1987-10-30</td><td>242 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>1 150 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Curtis McKenzie</td><td>CAN</td><td>LW</td><td>26</td><td>1991-02-22</td><td>205 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>750 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Filip Chlapik</td><td>CZE</td><td>C</td><td>20</td><td>1997-06-03</td><td>196 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>894 167 $</td><td>894 167 $</td><td></td><td></td><td></td></tr>
+<tr><td>Jamie McBain</td><td>USA</td><td>D</td><td>29</td><td>1988-02-25</td><td>180 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Jussi Jokinen</td><td>FIN</td><td>C/LW/RW</td><td>34</td><td>1983-04-01</td><td>191 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>4 000 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Matt Irwin</td><td>CAN</td><td>D</td><td>29</td><td>1987-11-29</td><td>207 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>675 000 $</td><td>675 000 $</td><td>675 000 $</td><td></td><td></td></tr>
+<tr><td>Samuel Morin</td><td>CAN</td><td>D</td><td>22</td><td>1995-07-12</td><td>202 Lbs</td><td>6 ft6</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>700 000 $</td><td>700 000 $</td><td>700 000 $</td><td></td><td></td></tr>
+</table><br />
+<table class="basictablesorter"><tr>
+<td class="STHSW100">Total Players</td><td class="STHSW100">Average Age</td><td class="STHSW120">Average Weight</td><td class="STHSW120">Average Height</td><td class="STHSW120">Average Contract</td><td class="STHSW120">Average Salary</td><td class="STHSW140">Players who can play<br />both Pro and Farm </td><td class="STHSW140">Players who can play<br />Pro Only</td><td class="STHSW140">Players who can play<br />Farm Only</td></tr>
+<tr><td>10</td><td>28,3</td><td>199 Lbs</td><td>6 ft 0</td><td>1,90 years</td><td>1 206 917 $</td>
+<td>10</td><td>0</td><td>0</td></tr></table></div>
+<h1 class="TeamPlayerInfoFarm_Okl"><a id="OklahomaCity">Oklahoma City</a></h1>
+<div class="STHSTeamLink">
+[ <a href="LHHA0-FarmTeamRoster.html#OklahomaCity">Farm Team Roster</a> ]
+[ <a href="LHHA0-FarmTeamScoring.html#OklahomaCity">Farm Team Scoring</a> ]
+[ <a href="LHHA0-FarmTeamPlayersInfo.html#OklahomaCity">Farm Team PlayersInfo</a> ]
+[ <a href="LHHA0-FarmTeamLines.html#OklahomaCity">Farm Team Lines</a> ]
+[ <a href="LHHA0-FarmTeamSchedule.html#OklahomaCity">Farm Team Schedule</a> ]
+[ <a href="LHHA0-FarmTeamStats.html#OklahomaCity">Farm Team Stats</a> ]
+[ <a href="LHHA0-FarmTeamStatsVS.html#OklahomaCity">Farm Team StatsVS</a> ]
+[ <a href="LHHA0-ProTeamRoster.html#Oilers">Pro Team Roster</a> ]
+ [ <a href="#STHSRosterTop"><b>Page Top</b></a> ]
+[ <a href="javascript:STHS_JS_ToggleTeam('STHS_JS_Team_OklahomaCity');"><b>Close / Open Team View</b></a> ]
+</div><div id="STHS_JS_Team_OklahomaCity" style="display: block;">
+<table class="basictablesorter"><thead><tr>
+<th class="STHSW200">Player Name</th><th class="STHSW25">CNT</th><th class="STHSW65">PO</th><th class="STHSW25">Age</th><th class="STHSW65">Birthday</th><th class="STHSW65">Weight</th><th class="STHSW55">Height</th><th class="STHSW45">Health<br /># Loss</th><th class="STHSW45">Force<br />Waiver</th><th class="STHSW65">Contract</th><th class="STHSW100">Type</th><th class="STHSW75">One Way<br />Contract</th><th class="STHSW85">Salary #1</th><th class="STHSW85">Salary #2</th><th class="STHSW85">Salary #3</th><th class="STHSW85">Salary #4</th><th class="STHSW85">Salary #5</th></tr></thead>
+<tr><td>Andreas Martinsen</td><td>NOR</td><td>C/LW/RW</td><td>27</td><td>1990-06-13</td><td>229 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>640 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Anthony Bitetto</td><td>USA</td><td>D</td><td>27</td><td>1990-07-15</td><td>210 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>612 500 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Ben Hutton</td><td>CAN</td><td>D</td><td>24</td><td>1993-04-20</td><td>207 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>2 800 000 $</td><td>2 800 000 $</td><td>2 800 000 $</td><td></td><td></td></tr>
+<tr><td>Dalton Prout</td><td>CAN</td><td>D</td><td>27</td><td>1990-03-13</td><td>230 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>1 575 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>David Backes</td><td>USA</td><td>C/RW</td><td>33</td><td>1984-05-01</td><td>221 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>6 000 000 $</td><td>6 000 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Jordan Nolan</td><td>CAN</td><td>C/LW/RW</td><td>28</td><td>1989-06-23</td><td>219 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td>650 000 $</td><td>650 000 $</td><td></td><td></td></tr>
+<tr><td>Mark Letestu</td><td>CAN</td><td>C/LW/RW</td><td>32</td><td>1985-02-04</td><td>195 Lbs</td><td>5 ft10</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>1 800 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Michael Mersch</td><td>USA</td><td>LW</td><td>24</td><td>1992-10-02</td><td>213 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>675 000 $</td><td>675 000 $</td><td>675 000 $</td><td></td><td></td></tr>
+<tr><td>Micheal Haley</td><td>CAN</td><td>C/LW/RW</td><td>31</td><td>1986-03-30</td><td>205 Lbs</td><td>5 ft11</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>825 000 $</td><td>825 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Nate Prosser</td><td>USA</td><td>D</td><td>31</td><td>1986-05-07</td><td>206 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Nick Lappin</td><td>USA</td><td>RW</td><td>24</td><td>1992-11-01</td><td>175 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>700 000 $</td><td>700 000 $</td><td>700 000 $</td><td></td><td></td></tr>
+<tr><td>Oscar Lindberg</td><td>SWE</td><td>C/LW</td><td>25</td><td>1991-10-29</td><td>202 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>1 700 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Patrick Eaves</td><td>CAN</td><td>RW</td><td>33</td><td>1984-05-01</td><td>202 Lbs</td><td>5 ft10</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>3 150 000 $</td><td>3 150 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Semyon Varlamov</td><td>RUS</td><td>G</td><td>29</td><td>1988-04-27</td><td>209 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>5 900 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Troy Grosenick</td><td>USA</td><td>G</td><td>27</td><td>1989-08-27</td><td>185 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td>650 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Wade Megan</td><td>USA</td><td>C</td><td>26</td><td>1990-07-22</td><td>191 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Yohann Auvitu</td><td>FRA</td><td>D</td><td>27</td><td>1989-07-27</td><td>187 Lbs</td><td>5 ft11</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>700 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Zach Redmond</td><td>USA</td><td>D</td><td>28</td><td>1988-07-26</td><td>212 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>612 500 $</td><td></td><td></td><td></td><td></td></tr>
+</table><br />
+<table class="basictablesorter"><tr>
+<td class="STHSW100">Total Players</td><td class="STHSW100">Average Age</td><td class="STHSW120">Average Weight</td><td class="STHSW120">Average Height</td><td class="STHSW120">Average Contract</td><td class="STHSW120">Average Salary</td><td class="STHSW140">Players who can play<br />both Pro and Farm </td><td class="STHSW140">Players who can play<br />Pro Only</td><td class="STHSW140">Players who can play<br />Farm Only</td></tr>
+<tr><td>18</td><td>27,9</td><td>205 Lbs</td><td>6 ft 1</td><td>1,67 years</td><td>1 682 778 $</td>
+<td>18</td><td>0</td><td>0</td></tr></table></div>
+<h1 class="TeamPlayerInfoFarm_Wil"><a id="Wilkes-Barre">Wilkes-Barre</a></h1>
+<div class="STHSTeamLink">
+[ <a href="LHHA0-FarmTeamRoster.html#Wilkes-Barre">Farm Team Roster</a> ]
+[ <a href="LHHA0-FarmTeamScoring.html#Wilkes-Barre">Farm Team Scoring</a> ]
+[ <a href="LHHA0-FarmTeamPlayersInfo.html#Wilkes-Barre">Farm Team PlayersInfo</a> ]
+[ <a href="LHHA0-FarmTeamLines.html#Wilkes-Barre">Farm Team Lines</a> ]
+[ <a href="LHHA0-FarmTeamSchedule.html#Wilkes-Barre">Farm Team Schedule</a> ]
+[ <a href="LHHA0-FarmTeamStats.html#Wilkes-Barre">Farm Team Stats</a> ]
+[ <a href="LHHA0-FarmTeamStatsVS.html#Wilkes-Barre">Farm Team StatsVS</a> ]
+[ <a href="LHHA0-ProTeamRoster.html#Penguins">Pro Team Roster</a> ]
+ [ <a href="#STHSRosterTop"><b>Page Top</b></a> ]
+[ <a href="javascript:STHS_JS_ToggleTeam('STHS_JS_Team_Wilkes-Barre');"><b>Close / Open Team View</b></a> ]
+</div><div id="STHS_JS_Team_Wilkes-Barre" style="display: block;">
+<table class="basictablesorter"><thead><tr>
+<th class="STHSW200">Player Name</th><th class="STHSW25">CNT</th><th class="STHSW65">PO</th><th class="STHSW25">Age</th><th class="STHSW65">Birthday</th><th class="STHSW65">Weight</th><th class="STHSW55">Height</th><th class="STHSW45">Health<br /># Loss</th><th class="STHSW45">Force<br />Waiver</th><th class="STHSW65">Contract</th><th class="STHSW100">Type</th><th class="STHSW75">One Way<br />Contract</th><th class="STHSW85">Salary #1</th><th class="STHSW85">Salary #2</th><th class="STHSW85">Salary #3</th><th class="STHSW85">Salary #4</th><th class="STHSW85">Salary #5</th></tr></thead>
+<tr><td>Chris Bigras</td><td>CAN</td><td>D</td><td>22</td><td>1995-02-22</td><td>190 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>874 125 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Colin White</td><td>USA</td><td>C/RW</td><td>20</td><td>1997-01-30</td><td>183 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>1 285 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Dale Weise</td><td>CAN</td><td>LW/RW</td><td>28</td><td>1988-08-05</td><td>206 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>2 350 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Denis Gurianov</td><td>RUS</td><td>RW</td><td>20</td><td>1997-06-07</td><td>200 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>1 644 166 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Dylan Strome</td><td>CAN</td><td>C</td><td>20</td><td>1997-03-07</td><td>200 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>3 338 333 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Evgeny Svechnikov</td><td>RUS</td><td>LW/RW</td><td>20</td><td>1996-10-31</td><td>212 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>1 075 833 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Janne Kuokkanen</td><td>FIN</td><td>C</td><td>19</td><td>1998-05-25</td><td>188 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td>925 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Joe Hicketts</td><td>CAN</td><td>D</td><td>21</td><td>1996-05-04</td><td>180 Lbs</td><td>5 ft8</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>635 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Laurent Dauphin</td><td>CAN</td><td>C/LW</td><td>22</td><td>1995-03-27</td><td>180 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>787 500 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Marcus Kruger</td><td>SWE</td><td>C</td><td>27</td><td>1990-05-27</td><td>186 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>3 083 333 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Markus Granlund</td><td>FIN</td><td>C/LW/RW</td><td>24</td><td>1993-04-16</td><td>183 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>900 000 $</td><td>900 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Matt Hunwick</td><td>USA</td><td>D</td><td>32</td><td>1985-05-21</td><td>200 Lbs</td><td>5 ft11</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>2 250 000 $</td><td>2 250 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Michael Hutchinson</td><td>CAN</td><td>G</td><td>27</td><td>1990-03-02</td><td>202 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>1 300 000 $</td><td>1 300 000 $</td><td>1 300 000 $</td><td></td><td></td></tr>
+<tr><td>Mike Fisher</td><td>CAN</td><td>C</td><td>37</td><td>1980-06-05</td><td>216 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>1 000 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Mitchell Stephens</td><td>CAN</td><td>C</td><td>20</td><td>1997-02-05</td><td>191 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td>925 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Nikolay Goldobin</td><td>RUS</td><td>LW/RW</td><td>21</td><td>1995-10-07</td><td>185 Lbs</td><td>5 ft11</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>1 075 833 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Noah Juulsen</td><td>CAN</td><td>D</td><td>20</td><td>1997-04-02</td><td>175 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>1 063 333 $</td><td>1 063 333 $</td><td></td><td></td><td></td></tr>
+<tr><td>Oscar Dansk</td><td>SWE</td><td>G</td><td>23</td><td>1994-02-28</td><td>195 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>675 000 $</td><td>675 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Scott Wedgewood</td><td>CAN</td><td>G</td><td>24</td><td>1992-08-14</td><td>195 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>700 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Sonny Milano</td><td>USA</td><td>LW/RW</td><td>21</td><td>1996-05-12</td><td>195 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>1 263 333 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Troy Stecher</td><td>CAN</td><td>D</td><td>23</td><td>1994-04-07</td><td>190 Lbs</td><td>5 ft10</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Tyler Motte</td><td>USA</td><td>C/LW/RW</td><td>22</td><td>1995-03-10</td><td>191 Lbs</td><td>5 ft10</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Vinnie Hinostroza</td><td>USA</td><td>C/RW</td><td>23</td><td>1994-04-03</td><td>173 Lbs</td><td>5 ft9</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>1 500 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Zach Werenski</td><td>USA</td><td>D</td><td>19</td><td>1997-07-19</td><td>209 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>1 775 000 $</td><td>1 775 000 $</td><td>1 775 000 $</td><td></td><td></td></tr>
+</table><br />
+<table class="basictablesorter"><tr>
+<td class="STHSW100">Total Players</td><td class="STHSW100">Average Age</td><td class="STHSW120">Average Weight</td><td class="STHSW120">Average Height</td><td class="STHSW120">Average Contract</td><td class="STHSW120">Average Salary</td><td class="STHSW140">Players who can play<br />both Pro and Farm </td><td class="STHSW140">Players who can play<br />Pro Only</td><td class="STHSW140">Players who can play<br />Farm Only</td></tr>
+<tr><td>24</td><td>23,1</td><td>193 Lbs</td><td>6 ft 1</td><td>1,42 years</td><td>1 344 825 $</td>
+<td>24</td><td>0</td><td>0</td></tr></table></div>
+<h1 class="TeamPlayerInfoFarm_Con"><a id="Connecticut">Connecticut</a></h1>
+<div class="STHSTeamLink">
+[ <a href="LHHA0-FarmTeamRoster.html#Connecticut">Farm Team Roster</a> ]
+[ <a href="LHHA0-FarmTeamScoring.html#Connecticut">Farm Team Scoring</a> ]
+[ <a href="LHHA0-FarmTeamPlayersInfo.html#Connecticut">Farm Team PlayersInfo</a> ]
+[ <a href="LHHA0-FarmTeamLines.html#Connecticut">Farm Team Lines</a> ]
+[ <a href="LHHA0-FarmTeamSchedule.html#Connecticut">Farm Team Schedule</a> ]
+[ <a href="LHHA0-FarmTeamStats.html#Connecticut">Farm Team Stats</a> ]
+[ <a href="LHHA0-FarmTeamStatsVS.html#Connecticut">Farm Team StatsVS</a> ]
+[ <a href="LHHA0-ProTeamRoster.html#Rangers">Pro Team Roster</a> ]
+ [ <a href="#STHSRosterTop"><b>Page Top</b></a> ]
+[ <a href="javascript:STHS_JS_ToggleTeam('STHS_JS_Team_Connecticut');"><b>Close / Open Team View</b></a> ]
+</div><div id="STHS_JS_Team_Connecticut" style="display: block;">
+<table class="basictablesorter"><thead><tr>
+<th class="STHSW200">Player Name</th><th class="STHSW25">CNT</th><th class="STHSW65">PO</th><th class="STHSW25">Age</th><th class="STHSW65">Birthday</th><th class="STHSW65">Weight</th><th class="STHSW55">Height</th><th class="STHSW45">Health<br /># Loss</th><th class="STHSW45">Force<br />Waiver</th><th class="STHSW65">Contract</th><th class="STHSW100">Type</th><th class="STHSW75">One Way<br />Contract</th><th class="STHSW85">Salary #1</th><th class="STHSW85">Salary #2</th><th class="STHSW85">Salary #3</th><th class="STHSW85">Salary #4</th><th class="STHSW85">Salary #5</th></tr></thead>
+<tr><td>Artturi Lehkonen</td><td>FIN</td><td>LW/RW</td><td>22</td><td>1995-07-04</td><td>183 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Beau Bennett</td><td>USA</td><td>LW/RW</td><td>25</td><td>1991-11-27</td><td>195 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td>650 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Chad Ruhwedel</td><td>USA</td><td>D</td><td>27</td><td>1990-05-07</td><td>191 Lbs</td><td>5 ft11</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Dillon Heatherington</td><td>CAN</td><td>D</td><td>22</td><td>1995-05-09</td><td>215 Lbs</td><td>6 ft4</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td>650 000 $</td><td>650 000 $</td><td></td><td></td></tr>
+<tr><td>Filip Hronek</td><td>CZE</td><td>D</td><td>19</td><td>1997-11-02</td><td>163 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>927 500 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Jake Dotchin</td><td>CAN</td><td>D</td><td>23</td><td>1994-03-24</td><td>210 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>812 500 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Johan Larsson</td><td>SWE</td><td>C/LW/RW</td><td>24</td><td>1992-07-25</td><td>198 Lbs</td><td>5 ft11</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>1 475 000 $</td><td>1 475 000 $</td><td>1 475 000 $</td><td></td><td></td></tr>
+<tr><td>Joseph Blandisi</td><td>CAN</td><td>C/LW</td><td>22</td><td>1994-07-18</td><td>182 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>680 000 $</td><td>680 000 $</td><td>680 000 $</td><td></td><td></td></tr>
+<tr><td>Martin Marincin</td><td>SVK</td><td>D</td><td>25</td><td>1992-02-18</td><td>212 Lbs</td><td>6 ft5</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>1 250 000 $</td><td>1 250 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Miikka Salomaki</td><td>FIN</td><td>C/LW/RW</td><td>24</td><td>1993-03-09</td><td>203 Lbs</td><td>5 ft11</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>612 500 $</td><td>612 500 $</td><td></td><td></td><td></td></tr>
+<tr><td>Mike Reilly</td><td>USA</td><td>D</td><td>24</td><td>1993-07-13</td><td>195 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>725 000 $</td><td>725 000 $</td><td>725 000 $</td><td></td><td></td></tr>
+<tr><td>Nick Shore</td><td>USA</td><td>C</td><td>24</td><td>1992-09-26</td><td>195 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td>925 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Patrick Wiercioch</td><td>CAN</td><td>D</td><td>26</td><td>1990-09-12</td><td>202 Lbs</td><td>6 ft5</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>800 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Paul Bittner</td><td>USA</td><td>C/LW</td><td>20</td><td>1996-11-04</td><td>214 Lbs</td><td>6 ft4</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>863 333 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Peter Holland</td><td>CAN</td><td>C/LW</td><td>26</td><td>1991-01-14</td><td>205 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>675 000 $</td><td>675 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Petteri Lindbohm</td><td>FIN</td><td>D</td><td>23</td><td>1993-09-23</td><td>198 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td>650 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Samuel Girard</td><td>CAN</td><td>D</td><td>19</td><td>1998-05-12</td><td>162 Lbs</td><td>5 ft10</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>910 833 $</td><td>910 833 $</td><td></td><td></td><td></td></tr>
+<tr><td>Shea Theodore</td><td>CAN</td><td>D</td><td>21</td><td>1995-08-03</td><td>195 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>5 200 000 $</td><td>5 200 000 $</td><td>5 200 000 $</td><td></td><td></td></tr>
+</table><br />
+<table class="basictablesorter"><tr>
+<td class="STHSW100">Total Players</td><td class="STHSW100">Average Age</td><td class="STHSW120">Average Weight</td><td class="STHSW120">Average Height</td><td class="STHSW120">Average Contract</td><td class="STHSW120">Average Salary</td><td class="STHSW140">Players who can play<br />both Pro and Farm </td><td class="STHSW140">Players who can play<br />Pro Only</td><td class="STHSW140">Players who can play<br />Farm Only</td></tr>
+<tr><td>18</td><td>23,1</td><td>195 Lbs</td><td>6 ft 2</td><td>1,94 years</td><td>1 076 759 $</td>
+<td>18</td><td>0</td><td>0</td></tr></table></div>
+<h1 class="TeamPlayerInfoFarm_Gra"><a id="GrandRapids">Grand Rapids</a></h1>
+<div class="STHSTeamLink">
+[ <a href="LHHA0-FarmTeamRoster.html#GrandRapids">Farm Team Roster</a> ]
+[ <a href="LHHA0-FarmTeamScoring.html#GrandRapids">Farm Team Scoring</a> ]
+[ <a href="LHHA0-FarmTeamPlayersInfo.html#GrandRapids">Farm Team PlayersInfo</a> ]
+[ <a href="LHHA0-FarmTeamLines.html#GrandRapids">Farm Team Lines</a> ]
+[ <a href="LHHA0-FarmTeamSchedule.html#GrandRapids">Farm Team Schedule</a> ]
+[ <a href="LHHA0-FarmTeamStats.html#GrandRapids">Farm Team Stats</a> ]
+[ <a href="LHHA0-FarmTeamStatsVS.html#GrandRapids">Farm Team StatsVS</a> ]
+[ <a href="LHHA0-ProTeamRoster.html#RedWings">Pro Team Roster</a> ]
+ [ <a href="#STHSRosterTop"><b>Page Top</b></a> ]
+[ <a href="javascript:STHS_JS_ToggleTeam('STHS_JS_Team_GrandRapids');"><b>Close / Open Team View</b></a> ]
+</div><div id="STHS_JS_Team_GrandRapids" style="display: block;">
+<table class="basictablesorter"><thead><tr>
+<th class="STHSW200">Player Name</th><th class="STHSW25">CNT</th><th class="STHSW65">PO</th><th class="STHSW25">Age</th><th class="STHSW65">Birthday</th><th class="STHSW65">Weight</th><th class="STHSW55">Height</th><th class="STHSW45">Health<br /># Loss</th><th class="STHSW45">Force<br />Waiver</th><th class="STHSW65">Contract</th><th class="STHSW100">Type</th><th class="STHSW75">One Way<br />Contract</th><th class="STHSW85">Salary #1</th><th class="STHSW85">Salary #2</th><th class="STHSW85">Salary #3</th><th class="STHSW85">Salary #4</th><th class="STHSW85">Salary #5</th></tr></thead>
+<tr><td>Andreas Englund</td><td>SWE</td><td>D</td><td>21</td><td>1996-01-21</td><td>189 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Andrew Poturalski</td><td>USA</td><td>C</td><td>23</td><td>1994-01-14</td><td>180 Lbs</td><td>5 ft10</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>700 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Antoine Bibeau</td><td>CAN</td><td>G</td><td>23</td><td>1994-05-01</td><td>213 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td>650 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Byron Froese</td><td>CAN</td><td>C/RW</td><td>26</td><td>1991-03-12</td><td>202 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Carl Gunnarsson</td><td>SWE</td><td>D</td><td>30</td><td>1986-11-09</td><td>198 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>2 900 000 $</td><td>2 900 000 $</td><td>2 900 000 $</td><td></td><td></td></tr>
+<tr><td>Chris Wagner</td><td>USA</td><td>C/RW</td><td>26</td><td>1991-05-27</td><td>198 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>637 500 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Christian Wolanin</td><td>CAN</td><td>D</td><td>22</td><td>1995-03-17</td><td>185 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td>925 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Derek Dorsett</td><td>CAN</td><td>LW/RW</td><td>30</td><td>1986-12-20</td><td>192 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>2 650 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Dominik Masin</td><td>CZE</td><td>D</td><td>21</td><td>1996-02-01</td><td>198 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>894 167 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Emile Poirier</td><td>CAN</td><td>LW</td><td>22</td><td>1994-12-14</td><td>196 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>863 333 $</td><td>863 333 $</td><td></td><td></td><td></td></tr>
+<tr><td>Eric Cornel</td><td>CAN</td><td>RW</td><td>21</td><td>1996-04-11</td><td>195 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Eric Gryba</td><td>CAN</td><td>D</td><td>29</td><td>1988-04-14</td><td>222 Lbs</td><td>6 ft4</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>900 000 $</td><td>900 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Jordan Schroeder</td><td>USA</td><td>C/LW/RW</td><td>26</td><td>1990-09-29</td><td>170 Lbs</td><td>5 ft9</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Markus Nutivaara</td><td>FIN</td><td>D</td><td>23</td><td>1994-06-06</td><td>191 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Matt Lorito</td><td>CAN</td><td>LW</td><td>27</td><td>1990-07-03</td><td>171 Lbs</td><td>5 ft9</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>637 500 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Michael McCarron</td><td>USA</td><td>RW</td><td>22</td><td>1995-03-07</td><td>230 Lbs</td><td>6 ft6</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>874 125 $</td><td>874 125 $</td><td>874 125 $</td><td></td><td></td></tr>
+<tr><td>Michael McNiven</td><td>CAN</td><td>G</td><td>20</td><td>1997-07-09</td><td>214 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>703 333 $</td><td>703 333 $</td><td></td><td></td><td></td></tr>
+<tr><td>Mike Condon</td><td>USA</td><td>G</td><td>27</td><td>1990-04-27</td><td>195 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>2 400 000 $</td><td>2 400 000 $</td><td>2 400 000 $</td><td></td><td></td></tr>
+<tr><td>Mike Green</td><td>CAN</td><td>D</td><td>31</td><td>1985-10-12</td><td>207 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>5 375 000 $</td><td>5 375 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Niklas Kronwall</td><td>SWE</td><td>D</td><td>36</td><td>1981-01-12</td><td>194 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>4 750 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Sam Gagner</td><td>CAN</td><td>C/RW</td><td>27</td><td>1989-08-10</td><td>200 Lbs</td><td>5 ft11</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>3 150 000 $</td><td>3 150 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Stephen Gionta</td><td>USA</td><td>C/LW/RW</td><td>33</td><td>1983-10-09</td><td>177 Lbs</td><td>5 ft7</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td></td><td></td><td></td><td></td></tr>
+</table><br />
+<table class="basictablesorter"><tr>
+<td class="STHSW100">Total Players</td><td class="STHSW100">Average Age</td><td class="STHSW120">Average Weight</td><td class="STHSW120">Average Height</td><td class="STHSW120">Average Contract</td><td class="STHSW120">Average Salary</td><td class="STHSW140">Players who can play<br />both Pro and Farm </td><td class="STHSW140">Players who can play<br />Pro Only</td><td class="STHSW140">Players who can play<br />Farm Only</td></tr>
+<tr><td>22</td><td>25,7</td><td>196 Lbs</td><td>6 ft 1</td><td>1,59 years</td><td>1 533 407 $</td>
+<td>22</td><td>0</td><td>0</td></tr></table></div>
+<h1 class="TeamPlayerInfoFarm_Roc"><a id="Rochester">Rochester</a></h1>
+<div class="STHSTeamLink">
+[ <a href="LHHA0-FarmTeamRoster.html#Rochester">Farm Team Roster</a> ]
+[ <a href="LHHA0-FarmTeamScoring.html#Rochester">Farm Team Scoring</a> ]
+[ <a href="LHHA0-FarmTeamPlayersInfo.html#Rochester">Farm Team PlayersInfo</a> ]
+[ <a href="LHHA0-FarmTeamLines.html#Rochester">Farm Team Lines</a> ]
+[ <a href="LHHA0-FarmTeamSchedule.html#Rochester">Farm Team Schedule</a> ]
+[ <a href="LHHA0-FarmTeamStats.html#Rochester">Farm Team Stats</a> ]
+[ <a href="LHHA0-FarmTeamStatsVS.html#Rochester">Farm Team StatsVS</a> ]
+[ <a href="LHHA0-ProTeamRoster.html#Sabres">Pro Team Roster</a> ]
+ [ <a href="#STHSRosterTop"><b>Page Top</b></a> ]
+[ <a href="javascript:STHS_JS_ToggleTeam('STHS_JS_Team_Rochester');"><b>Close / Open Team View</b></a> ]
+</div><div id="STHS_JS_Team_Rochester" style="display: block;">
+<table class="basictablesorter"><thead><tr>
+<th class="STHSW200">Player Name</th><th class="STHSW25">CNT</th><th class="STHSW65">PO</th><th class="STHSW25">Age</th><th class="STHSW65">Birthday</th><th class="STHSW65">Weight</th><th class="STHSW55">Height</th><th class="STHSW45">Health<br /># Loss</th><th class="STHSW45">Force<br />Waiver</th><th class="STHSW65">Contract</th><th class="STHSW100">Type</th><th class="STHSW75">One Way<br />Contract</th><th class="STHSW85">Salary #1</th><th class="STHSW85">Salary #2</th><th class="STHSW85">Salary #3</th><th class="STHSW85">Salary #4</th><th class="STHSW85">Salary #5</th></tr></thead>
+<tr><td>Alexander Burmistrov</td><td>RUS</td><td>C/LW/RW</td><td>25</td><td>1991-10-21</td><td>180 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>900 000 $</td><td>900 000 $</td><td>900 000 $</td><td></td><td></td></tr>
+<tr><td>Ben Harpur</td><td>CAN</td><td>D</td><td>22</td><td>1995-01-12</td><td>222 Lbs</td><td>6 ft6</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>773 333 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Blake Speers</td><td>CAN</td><td>C/RW</td><td>20</td><td>1997-01-02</td><td>185 Lbs</td><td>5 ft11</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>935 833 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Casey DeSmith</td><td>USA</td><td>G</td><td>25</td><td>1991-08-13</td><td>181 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>675 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Cory Conacher</td><td>CAN</td><td>C/LW/RW</td><td>27</td><td>1989-12-14</td><td>180 Lbs</td><td>5 ft8</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Daniel Sprong</td><td>NLD</td><td>RW</td><td>20</td><td>1997-03-17</td><td>180 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>750 000 $</td><td>750 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>David Warsofsky</td><td>USA</td><td>D</td><td>27</td><td>1990-05-30</td><td>170 Lbs</td><td>5 ft9</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>675 000 $</td><td>675 000 $</td><td>675 000 $</td><td></td><td></td></tr>
+<tr><td>Eddie Lack</td><td>SWE</td><td>G</td><td>29</td><td>1988-01-05</td><td>187 Lbs</td><td>6 ft4</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>2 750 000 $</td><td>2 750 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Henrik Borgstrom</td><td>FIN</td><td>C</td><td>19</td><td>1997-08-06</td><td>185 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td>925 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Julius Bergman</td><td>SWE</td><td>D</td><td>21</td><td>1995-11-02</td><td>205 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>714 167 $</td><td>714 167 $</td><td>714 167 $</td><td></td><td></td></tr>
+<tr><td>Justin Holl</td><td>USA</td><td>D</td><td>25</td><td>1992-01-30</td><td>205 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Kevin Bieksa</td><td>CAN</td><td>D</td><td>36</td><td>1981-06-16</td><td>197 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>4 000 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Kristers Gudlevskis</td><td>LVA</td><td>G</td><td>24</td><td>1992-07-31</td><td>214 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>575 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Mark Alt</td><td>USA</td><td>D</td><td>25</td><td>1991-10-18</td><td>201 Lbs</td><td>6 ft4</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Matt Bartkowski</td><td>USA</td><td>D</td><td>29</td><td>1988-06-04</td><td>196 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>612 500 $</td><td>612 500 $</td><td></td><td></td><td></td></tr>
+<tr><td>Matt Moulson</td><td>CAN</td><td>LW/RW</td><td>33</td><td>1983-11-01</td><td>203 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>5 000 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Nikita Scherbak</td><td>RUS</td><td>RW</td><td>21</td><td>1995-12-30</td><td>192 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>863 333 $</td><td>863 333 $</td><td>863 333 $</td><td></td><td></td></tr>
+<tr><td>Seth Griffith</td><td>CAN</td><td>C/RW</td><td>24</td><td>1993-01-04</td><td>190 Lbs</td><td>5 ft9</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>625 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Stefan Matteau</td><td>USA</td><td>C/LW</td><td>23</td><td>1994-02-23</td><td>220 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td>650 000 $</td><td>650 000 $</td><td></td><td></td></tr>
+<tr><td>Tanner Fritz</td><td>CAN</td><td>C</td><td>25</td><td>1991-08-20</td><td>192 Lbs</td><td>5 ft11</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Thatcher Demko</td><td>USA</td><td>G</td><td>21</td><td>1995-12-08</td><td>192 Lbs</td><td>6 ft4</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>2 941 667 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Timothy Liljegren</td><td>SWE</td><td>D</td><td>18</td><td>1999-04-30</td><td>190 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>1 325 000 $</td><td>1 325 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Ty Rattie</td><td>CAN</td><td>RW</td><td>24</td><td>1993-02-05</td><td>184 Lbs</td><td>5 ft11</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Xavier Ouellet</td><td>CAN</td><td>D</td><td>23</td><td>1993-07-29</td><td>185 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>715 000 $</td><td></td><td></td><td></td><td></td></tr>
+</table><br />
+<table class="basictablesorter"><tr>
+<td class="STHSW100">Total Players</td><td class="STHSW100">Average Age</td><td class="STHSW120">Average Weight</td><td class="STHSW120">Average Height</td><td class="STHSW120">Average Contract</td><td class="STHSW120">Average Salary</td><td class="STHSW140">Players who can play<br />both Pro and Farm </td><td class="STHSW140">Players who can play<br />Pro Only</td><td class="STHSW140">Players who can play<br />Farm Only</td></tr>
+<tr><td>24</td><td>24,4</td><td>193 Lbs</td><td>6 ft 1</td><td>1,63 years</td><td>1 235 660 $</td>
+<td>24</td><td>0</td><td>0</td></tr></table></div>
+<h1 class="TeamPlayerInfoFarm_Cha"><a id="Charlotte">Charlotte</a></h1>
+<div class="STHSTeamLink">
+[ <a href="LHHA0-FarmTeamRoster.html#Charlotte">Farm Team Roster</a> ]
+[ <a href="LHHA0-FarmTeamScoring.html#Charlotte">Farm Team Scoring</a> ]
+[ <a href="LHHA0-FarmTeamPlayersInfo.html#Charlotte">Farm Team PlayersInfo</a> ]
+[ <a href="LHHA0-FarmTeamLines.html#Charlotte">Farm Team Lines</a> ]
+[ <a href="LHHA0-FarmTeamSchedule.html#Charlotte">Farm Team Schedule</a> ]
+[ <a href="LHHA0-FarmTeamStats.html#Charlotte">Farm Team Stats</a> ]
+[ <a href="LHHA0-FarmTeamStatsVS.html#Charlotte">Farm Team StatsVS</a> ]
+[ <a href="LHHA0-ProTeamRoster.html#Whalers">Pro Team Roster</a> ]
+ [ <a href="#STHSRosterTop"><b>Page Top</b></a> ]
+[ <a href="javascript:STHS_JS_ToggleTeam('STHS_JS_Team_Charlotte');"><b>Close / Open Team View</b></a> ]
+</div><div id="STHS_JS_Team_Charlotte" style="display: block;">
+<table class="basictablesorter"><thead><tr>
+<th class="STHSW200">Player Name</th><th class="STHSW25">CNT</th><th class="STHSW65">PO</th><th class="STHSW25">Age</th><th class="STHSW65">Birthday</th><th class="STHSW65">Weight</th><th class="STHSW55">Height</th><th class="STHSW45">Health<br /># Loss</th><th class="STHSW45">Force<br />Waiver</th><th class="STHSW65">Contract</th><th class="STHSW100">Type</th><th class="STHSW75">One Way<br />Contract</th><th class="STHSW85">Salary #1</th><th class="STHSW85">Salary #2</th><th class="STHSW85">Salary #3</th><th class="STHSW85">Salary #4</th><th class="STHSW85">Salary #5</th></tr></thead>
+<tr><td>Adam Brooks</td><td>CAN</td><td>C</td><td>21</td><td>1996-05-06</td><td>175 Lbs</td><td>5 ft1</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td>925 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Andrew Mangiapane</td><td>CAN</td><td>LW</td><td>21</td><td>1996-04-04</td><td>184 Lbs</td><td>5 ft10</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>800 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Brandon Montour</td><td>CAN</td><td>D</td><td>23</td><td>1994-04-11</td><td>192 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td>925 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Cody Franson</td><td>CAN</td><td>D</td><td>29</td><td>1987-08-08</td><td>224 Lbs</td><td>6 ft5</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>1 000 000 $</td><td>1 000 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>David Schlemko</td><td>CAN</td><td>D</td><td>30</td><td>1987-05-07</td><td>189 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>2 100 000 $</td><td>2 100 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Erik Gustafsson</td><td>SWE</td><td>D</td><td>25</td><td>1992-03-14</td><td>176 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>1 200 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Hunter Shinkaruk</td><td>CAN</td><td>C/LW/RW</td><td>22</td><td>1994-10-13</td><td>181 Lbs</td><td>5 ft10</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>1 075 833 $</td><td>1 075 833 $</td><td></td><td></td><td></td></tr>
+<tr><td>Ivan Barbashev</td><td>RUS</td><td>C/LW/RW</td><td>21</td><td>1995-12-14</td><td>187 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>863 333 $</td><td>863 333 $</td><td>863 333 $</td><td></td><td></td></tr>
+<tr><td>Jan Kostalek</td><td>CZE</td><td>D</td><td>22</td><td>1995-02-17</td><td>196 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>693 333 $</td><td>693 333 $</td><td>693 333 $</td><td></td><td></td></tr>
+<tr><td>Jason Akeson</td><td>CAN</td><td>RW</td><td>27</td><td>1990-06-03</td><td>185 Lbs</td><td>5 ft10</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>575 000 $</td><td>575 000 $</td><td>575 000 $</td><td></td><td></td></tr>
+<tr><td>Lawson Crouse</td><td>CAN</td><td>LW</td><td>20</td><td>1997-06-23</td><td>220 Lbs</td><td>6 ft4</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>1 602 500 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Mike McKenna</td><td>USA</td><td>G</td><td>34</td><td>1983-04-11</td><td>183 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Ryan Mantha</td><td>USA</td><td>D</td><td>21</td><td>1996-06-18</td><td>225 Lbs</td><td>6 ft5</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td>925 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Toby Enstrom</td><td>SWE</td><td>D</td><td>32</td><td>1984-11-05</td><td>180 Lbs</td><td>5 ft10</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>5 750 000 $</td><td>5 750 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Travis Sanheim</td><td>CAN</td><td>D</td><td>21</td><td>1996-03-29</td><td>181 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>1 263 333 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Zac Dalpe</td><td>CAN</td><td>C/LW/RW</td><td>27</td><td>1989-11-01</td><td>194 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>725 000 $</td><td></td><td></td><td></td><td></td></tr>
+</table><br />
+<table class="basictablesorter"><tr>
+<td class="STHSW100">Total Players</td><td class="STHSW100">Average Age</td><td class="STHSW120">Average Weight</td><td class="STHSW120">Average Height</td><td class="STHSW120">Average Contract</td><td class="STHSW120">Average Salary</td><td class="STHSW140">Players who can play<br />both Pro and Farm </td><td class="STHSW140">Players who can play<br />Pro Only</td><td class="STHSW140">Players who can play<br />Farm Only</td></tr>
+<tr><td>16</td><td>24,8</td><td>192 Lbs</td><td>6 ft 0</td><td>1,81 years</td><td>1 317 083 $</td>
+<td>16</td><td>0</td><td>0</td></tr></table></div>
+<h1 class="TeamPlayerInfoFarm_Hou"><a id="Houston">Houston</a></h1>
+<div class="STHSTeamLink">
+[ <a href="LHHA0-FarmTeamRoster.html#Houston">Farm Team Roster</a> ]
+[ <a href="LHHA0-FarmTeamScoring.html#Houston">Farm Team Scoring</a> ]
+[ <a href="LHHA0-FarmTeamPlayersInfo.html#Houston">Farm Team PlayersInfo</a> ]
+[ <a href="LHHA0-FarmTeamLines.html#Houston">Farm Team Lines</a> ]
+[ <a href="LHHA0-FarmTeamSchedule.html#Houston">Farm Team Schedule</a> ]
+[ <a href="LHHA0-FarmTeamStats.html#Houston">Farm Team Stats</a> ]
+[ <a href="LHHA0-FarmTeamStatsVS.html#Houston">Farm Team StatsVS</a> ]
+[ <a href="LHHA0-ProTeamRoster.html#Wild">Pro Team Roster</a> ]
+ [ <a href="#STHSRosterTop"><b>Page Top</b></a> ]
+[ <a href="javascript:STHS_JS_ToggleTeam('STHS_JS_Team_Houston');"><b>Close / Open Team View</b></a> ]
+</div><div id="STHS_JS_Team_Houston" style="display: block;">
+<table class="basictablesorter"><thead><tr>
+<th class="STHSW200">Player Name</th><th class="STHSW25">CNT</th><th class="STHSW65">PO</th><th class="STHSW25">Age</th><th class="STHSW65">Birthday</th><th class="STHSW65">Weight</th><th class="STHSW55">Height</th><th class="STHSW45">Health<br /># Loss</th><th class="STHSW45">Force<br />Waiver</th><th class="STHSW65">Contract</th><th class="STHSW100">Type</th><th class="STHSW75">One Way<br />Contract</th><th class="STHSW85">Salary #1</th><th class="STHSW85">Salary #2</th><th class="STHSW85">Salary #3</th><th class="STHSW85">Salary #4</th><th class="STHSW85">Salary #5</th></tr></thead>
+<tr><td>Alex Nedeljkovic</td><td>USA</td><td>G</td><td>21</td><td>1996-01-07</td><td>198 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>894 167 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Alexandre Grenier</td><td>CAN</td><td>RW</td><td>25</td><td>1991-09-05</td><td>200 Lbs</td><td>6 ft5</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>725 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Andrey Pedan</td><td>LTU</td><td>D</td><td>24</td><td>1993-07-03</td><td>213 Lbs</td><td>6 ft5</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>750 000 $</td><td>750 000 $</td><td>750 000 $</td><td></td><td></td></tr>
+<tr><td>Calvin Thurkauf</td><td>CHE</td><td>C/LW</td><td>20</td><td>1997-06-27</td><td>212 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>738 333 $</td><td>738 333 $</td><td></td><td></td><td></td></tr>
+<tr><td>Carter Verhaeghe</td><td>CAN</td><td>C/LW/RW</td><td>21</td><td>1995-08-14</td><td>190 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>650 000 $</td><td>650 000 $</td><td>650 000 $</td><td></td><td></td></tr>
+<tr><td>Conner Bleackley</td><td>CAN</td><td>C</td><td>21</td><td>1996-02-07</td><td>192 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>750 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Duncan Siemens</td><td>CAN</td><td>D</td><td>23</td><td>1993-09-07</td><td>210 Lbs</td><td>6 ft3</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>750 000 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Filip Gustavsson</td><td>SWE</td><td>G</td><td>19</td><td>1998-06-07</td><td>183 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td>925 000 $</td><td></td><td></td><td></td></tr>
+<tr><td>Jakub Vrana</td><td>CZE</td><td>LW/RW</td><td>21</td><td>1996-02-28</td><td>197 Lbs</td><td>6 ft0</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>1 363 333 $</td><td>1 363 333 $</td><td>1 363 333 $</td><td></td><td></td></tr>
+<tr><td>Jordan Schmaltz</td><td>USA</td><td>D</td><td>23</td><td>1993-10-08</td><td>190 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>700 000 $</td><td>700 000 $</td><td>700 000 $</td><td></td><td></td></tr>
+<tr><td>Justin Bailey</td><td>USA</td><td>C/LW/RW</td><td>22</td><td>1995-07-01</td><td>214 Lbs</td><td>6 ft4</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>715 000 $</td><td>715 000 $</td><td>715 000 $</td><td></td><td></td></tr>
+<tr><td>Martin Necas</td><td>CZE</td><td>C</td><td>18</td><td>1999-01-15</td><td>167 Lbs</td><td>6 ft1</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>894 166 $</td><td>894 166 $</td><td></td><td></td><td></td></tr>
+<tr><td>Philippe Desrosiers</td><td>CAN</td><td>G</td><td>21</td><td>1995-08-16</td><td>196 Lbs</td><td>6 ft2</td><td>0</td><td>No</td><td>3 years</td><td>Pro &amp; Farm</td><td>No</td><td>715 000 $</td><td>715 000 $</td><td>715 000 $</td><td></td><td></td></tr>
+<tr><td>Scott Kosmachuk</td><td>CAN</td><td>RW</td><td>23</td><td>1994-01-24</td><td>185 Lbs</td><td>5 ft11</td><td>0</td><td>No</td><td>1 year   </td><td>Pro &amp; Farm</td><td>No</td><td>894 167 $</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Sergey Zborovskiy</td><td>RUS</td><td>D</td><td>20</td><td>1997-02-21</td><td>209 Lbs</td><td>6 ft4</td><td>0</td><td>No</td><td>2 years</td><td>Pro &amp; Farm</td><td>No</td><td>925 000 $</td><td>925 000 $</td><td></td><td></td><td></td></tr>
+</table><br />
+<table class="basictablesorter"><tr>
+<td class="STHSW100">Total Players</td><td class="STHSW100">Average Age</td><td class="STHSW120">Average Weight</td><td class="STHSW120">Average Height</td><td class="STHSW120">Average Contract</td><td class="STHSW120">Average Salary</td><td class="STHSW140">Players who can play<br />both Pro and Farm </td><td class="STHSW140">Players who can play<br />Pro Only</td><td class="STHSW140">Players who can play<br />Farm Only</td></tr>
+<tr><td>15</td><td>21,5</td><td>197 Lbs</td><td>6 ft 2</td><td>2,07 years</td><td>825 944 $</td>
+<td>15</td><td>0</td><td>0</td></tr></table></div>
+<br /><br /><br /><a href="#" class="scrollup">Back to the Top</a><div class="footer">
+Output by the <a href="http://sths.simont.info">SimonT Hockey Simulator (STHS)</a> for Jean-Francois Gagnon<span class="FooterW3C"> - Original Page <a href="http://validator.w3.org/check?uri=referer">W3C HTML5 Valid</a></span>
+<div style="display:none;visibility:hidden"><a href="http://sths.simont.info">Hockey Simulator</a> - <a href="http://sths.simont.info">Hockey Simulation</a> - <a href="http://sths.simont.info">Hockey Manager</a></div></div>
+</body></html>
